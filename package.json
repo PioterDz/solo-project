@@ -17,9 +17,9 @@
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
     "watch:browser-sync": "npm run browser-sync",
-    "watch:sassprefixer": "onchange -d 100 ./style.scss -- run-s compiler prefixer",
-    "prefixer": "autoprefixer-cli -o ./style.css",
-    "compiler": "node-sass ./style.scss -o ./"
+    "watch:sassprefixer": "onchange -d 100 sass/style.scss -- run-s compiler prefixer",
+    "prefixer": "autoprefixer-cli -o css/style.css",
+    "compiler": "node-sass sass/style.scss -o css/"
   },
   "keywords": [],
   "author": "",

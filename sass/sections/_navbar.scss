@@ -1,0 +1,20 @@
+.navbar {
+    grid-area: 1/2/2/3;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 10fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    @include border(0, 0, 1px, 0);
+    .wallet {
+        grid-area: 1/2/2/3;
+    }
+    .notification {
+        grid-area: 1/3/2/4;
+    }
+    .profile {
+        grid-area: 1/4/2/5;
+    }
+    .quit {
+        grid-area: 1/5/2/6;
+    }
+}

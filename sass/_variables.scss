@@ -1,10 +1,65 @@
 /* colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
+$header-color: #979797;
+$paragraph-color: #797979;
+$text-color: #333333;
+$text-color-hover: white;
+$sidebar-background-color: #333333;
+$page-background-color: white;
+$body-background-color: #e3e3e3;
+$border-color: #e3e3e3;
+/* buttons */
+$action-button-color: #f58220;
+$action-button-color-hover: #ffa220;
+$decline-button-color: #979797;
+$decline-button-color-hover: #e3e3e3;
+$disabled-button-color: #e3e3e3;
+/* links */
+$link-color: #56819f;
+$link-color-hover: #ffa220;
+$hover-background-color: #979797;
 
+$positive-notification: #96cc9B;
+$positive-notification-hover: #74b67a;
+$negative-notification: #ec7171;
+$negative-notification-hover: #de5252;
+
+$slider-color: #f58220;
+$slider-background: #e3e3e3;
 /* font sizes */
 $paragraph-font-size: 16px;
-
+$header-font-size: 18px;
 /* fonts */
 $brand-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
+/* input */
+$placeholder-color: #f5f5f2;
+$input-borderbox: borderbox #f5f5f2;
+$input-borderbox-click: borderbox #979797;
+$input-borderbox-warn: borderbox #ff0000;
+/* messenger */
+$online-color: #04ae00;
+$offline-color: #e3e3e3;
+$your-message-background: #797979;
+$your-message-color: white;
+$manager-message-background: #e3e3e3;
+$manager-message-color: #333333;
+/* checkbox */
+$checked-color: #04AE00;
+
+/* paddings */
+$sidebar-padding-left: 18px;
+
+.page-header {
+    color: $header-color;
+    font-size: $header-font-size;
+    font-weight: 600;
+    font-family: $paragraph-font;
+    text-transform: uppercase;
+}
+.section-header {
+    color: $header-color;
+    font-size: $header-font-size;
+    font-weight: 800;
+    font-family: $paragraph-font;
+}
+
