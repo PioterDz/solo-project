@@ -5,44 +5,45 @@
     grid-template-rows: 60px 320px 1fr;
     background-color: $sidebar-background-color;
     .sidebar-up {
-        grid-area: 1/1/2/2;
-        h1 {
-            font-family: 'Lemon', cursive;
-            color: white;
-            font-size: 24px;
-            margin: 0;
-            padding: (60px - 24px)/2 0;
-            padding-left: $sidebar-padding-left;
-        }
-    }
-    .sidebar-down {
         grid-area: 2/1/3/2;
         @include border(0, 0, 1px, 0);
         a {
             display: flex;
-            flex-direction: column;
             color: $paragraph-color;
             font-size: $paragraph-font-size;
             font-family: $paragraph-font;
             text-decoration: none;
             padding: (40px - $paragraph-font-size) / 2 0;
             padding-left: $sidebar-padding-left;
+            img {
+                @include icon(16px,black);
+                padding-right: 5px;
+            }
             &:hover {
             color: $text-color-hover;
             background-color: $hover-background-color;
             @include border(0, 0, 0, 10px);
             border-color: $action-button-color-hover;
-                .icon {
-                    @include icon(black);
-                }
             } 
         }
     }
-    .sidebar-manager {
+    .sidebar-down {
         grid-area: 3/1/4/2;
         padding-left: $sidebar-padding-left;
         .manager {
             padding-top: 27px;
+        }
+        .wrapper {
+            display: flex;
+            img {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                margin: 15px 0;
+            }
+            p{
+                padding: 12px;
+            }
         }
     } 
 }

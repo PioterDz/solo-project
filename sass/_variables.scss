@@ -6,7 +6,7 @@ $text-color-hover: white;
 $sidebar-background-color: #333333;
 $page-background-color: white;
 $body-background-color: #e3e3e3;
-$border-color: #e3e3e3;
+$border-color: #979797;
 /* buttons */
 $action-button-color: #f58220;
 $action-button-color-hover: #ffa220;
@@ -49,6 +49,19 @@ $checked-color: #04AE00;
 /* paddings */
 $sidebar-padding-left: 18px;
 
+.link {
+    color: $link-color;
+    &:hover {
+        color: $link-color-hover;
+        cursor: pointer;
+    }
+    font-size: 14px;
+}
+.paragraph {
+    font-family: $paragraph-font;
+    font-size: $paragraph-font-size;
+    color: $paragraph-color;
+}
 .page-header {
     color: $header-color;
     font-size: $header-font-size;
