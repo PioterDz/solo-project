@@ -8,9 +8,11 @@
     font-size: $header-font-size;
     font-family: $paragraph-font;
     text-transform: uppercase;
+    @include border(0, 0, 1px, 0);
+    padding: 16px 0;
 }
 .section-header {
-    color: $header-color;
+    color: $paragraph-color;
     font-size: $paragraph-font-size;
     font-weight: 600;
     font-family: $paragraph-font;

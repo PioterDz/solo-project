@@ -1,0 +1,22 @@
+.list-with-digit {
+    @include border (0, 0, 1px, 0);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover {
+        background-color: $hover-background-color;
+    }
+    .two-icons {
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        margin: 0 100px;
+        .icon-links, .icon-trash {
+            @include icon(18px, black);
+            margin: 0 10px;
+        }
+    }
+    &:hover .two-icons {
+        visibility: visible;
+    }
+}
