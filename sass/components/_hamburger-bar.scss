@@ -1,0 +1,11 @@
+.hamburger {
+    &:hover {
+        cursor: pointer;
+    }
+    .bar {
+        width: 18px;
+        height: 2px;
+        background-color: $paragraph-color;
+        margin: 5px 0;
+    }
+}

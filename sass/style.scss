@@ -1,14 +1,21 @@
+@import "font";
 @import "variables";
 @import "mixins";
 @import "normalize";
 @import "layout";
 @import "mediaqueries";
 
-/* components */
 
+/* components */
+@import "components/buttons";
+@import "components/links-component";
+@import "components/text";
+@import "components/tabs";
+@import "components/hamburger-bar";
+@import "components/date-period";
 /* sections */
 @import "sections/sidebar";
 @import "sections/navbar";
 
 /* pages */
-@import "pages/general"
+@import "pages/general";

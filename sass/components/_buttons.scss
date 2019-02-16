@@ -1,0 +1,46 @@
+.btn {
+    @include square-size(95px, 40px);
+    font-family: $paragraph-font;
+    cursor: pointer;
+    border-radius: 5%;
+    color: $text-color-hover;
+    border: 0; 
+}
+.orange-btn {
+    @extend .btn;
+    background-color: $action-button-color;
+    &:hover {
+        background-color: $action-button-color-hover;
+    }
+}
+.grey-btn {
+    @extend .btn;
+    background-color: $decline-button-color;
+    &:hover {
+        background-color: $decline-button-color-hover;
+    }
+}
+.top-menu-button {
+    @include square-size (50px, 50px);
+    @include border(0, 1px, 1px, 1px);
+    background-color: $page-background-color;
+    @extend .flex-center;
+    &:hover {
+        background-color: $hover-background-color;
+    }
+    img {
+        @include icon(18px,black);
+    }
+}
+.icon-button {
+    @include square-size(40px, 40px);
+    @extend .flex-center;
+    border-radius: 5%;
+    background-color: $action-button-color;
+    &:hover {
+        background-color: $action-button-color-hover;
+    }
+    img {
+        @include icon(20px, black);
+    }
+}

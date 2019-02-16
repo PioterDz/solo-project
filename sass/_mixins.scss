@@ -14,3 +14,12 @@
     width: $width;
     height: $height;
 }
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    @include square-size(18px, 18px);
+    border-radius: 50%;
+}
