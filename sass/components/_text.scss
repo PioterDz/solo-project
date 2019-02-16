@@ -1,0 +1,24 @@
+.paragraph {
+    font-family: $paragraph-font;
+    font-size: $paragraph-font-size;
+    color: $paragraph-color;
+}
+.page-header {
+    color: $header-color;
+    font-size: $header-font-size;
+    font-family: $paragraph-font;
+    text-transform: uppercase;
+    @include border(0, 0, 1px, 0);
+    padding: 16px 0;
+}
+.section-header {
+    color: $paragraph-color;
+    font-size: $paragraph-font-size;
+    font-weight: 600;
+    font-family: $paragraph-font;
+}
+.text {
+    font-family: $paragraph-font;
+    font-size: 14px;
+    color: $text-color;
+}

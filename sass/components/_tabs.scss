@@ -1,0 +1,22 @@
+.color-tab {
+    display:inline-flex;
+    align-items: center;
+    font-family: $paragraph-font;
+    background-color: $tab-button-color;
+    @include square-size(120px, 40px);
+    border: 0;
+    cursor: pointer;
+    .paragraph {
+        margin: 0;
+        padding: 0 10px;
+    }
+    &:hover {
+        background-color: $decline-button-color-hover;
+        color: $link-color;
+    }
+    .tab-circle {
+        @extend .circle;
+        background-color: $checked-color;
+        margin: 0 10px;
+    }
+}

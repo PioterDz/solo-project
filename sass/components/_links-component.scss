@@ -1,0 +1,16 @@
+.link {
+    color: $link-color;
+    &:hover {
+        color: $link-color-hover;
+        cursor: pointer;
+        background-color: $hover-background-color;
+    }
+}
+.small-link {
+    @extend .link;
+    font-size: 12px;
+}
+.large-link {
+    @extend .link;
+    font-size: 14px;
+}

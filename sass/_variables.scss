@@ -7,12 +7,14 @@ $sidebar-background-color: #333333;
 $page-background-color: white;
 $body-background-color: #e3e3e3;
 $border-color: #979797;
+$text-color: black;
 /* buttons */
 $action-button-color: #f58220;
 $action-button-color-hover: #ffa220;
-$decline-button-color: #979797;
-$decline-button-color-hover: #e3e3e3;
+$decline-button-color: #797979;
+$decline-button-color-hover: #979797;
 $disabled-button-color: #e3e3e3;
+$tab-button-color: #e3e3e3;
 /* links */
 $link-color: #56819f;
 $link-color-hover: #ffa220;
@@ -26,11 +28,11 @@ $negative-notification-hover: #de5252;
 $slider-color: #f58220;
 $slider-background: #e3e3e3;
 /* font sizes */
-$paragraph-font-size: 16px;
-$header-font-size: 18px;
+$paragraph-font-size: 14px;
+$header-font-size: 16px;
 /* fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$brand-font: Glyphter, Helvetica, Arial;
+$paragraph-font: Glyphter, Helvetica, Arial;
 /* input */
 $placeholder-color: #f5f5f2;
 $input-borderbox: borderbox #f5f5f2;
@@ -48,31 +50,4 @@ $checked-color: #04AE00;
 
 /* paddings */
 $sidebar-padding-left: 18px;
-
-.link {
-    color: $link-color;
-    &:hover {
-        color: $link-color-hover;
-        cursor: pointer;
-    }
-    font-size: 14px;
-}
-.paragraph {
-    font-family: $paragraph-font;
-    font-size: $paragraph-font-size;
-    color: $paragraph-color;
-}
-.page-header {
-    color: $header-color;
-    font-size: $header-font-size;
-    font-weight: 600;
-    font-family: $paragraph-font;
-    text-transform: uppercase;
-}
-.section-header {
-    color: $header-color;
-    font-size: $header-font-size;
-    font-weight: 800;
-    font-family: $paragraph-font;
-}
 
