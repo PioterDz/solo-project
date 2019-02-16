@@ -1,0 +1,16 @@
+@mixin border($width-top, $width-right, $width-bottom, $width-left) {
+    border-style: solid;
+    border-width: $width-top $width-right $width-bottom $width-left;
+    border-color: $border-color;
+}
+
+@mixin icon($icon-size, $icon-color) {
+    width: $icon-size;
+    height: $icon-size;
+    color: $icon-color;
+}
+
+@mixin square-size($width, $height) {
+    width: $width;
+    height: $height;
+}

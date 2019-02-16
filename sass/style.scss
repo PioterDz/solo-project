@@ -2,7 +2,13 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
+@import "mediaqueries";
 
 /* components */
+
 /* sections */
-/* pages / views */
+@import "sections/sidebar";
+@import "sections/navbar";
+
+/* pages */
+@import "pages/general"
