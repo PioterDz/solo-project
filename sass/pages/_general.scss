@@ -1,0 +1,80 @@
+.general {
+    grid-area: 2/2/3/3;
+    @include square-size(1056px,800px);
+    background-color: $page-background-color;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 47px 109px 642px;
+    h1 {
+        @include border(0, 0, 1px, 0);
+        grid-area: 1/1/2/2;
+    }
+    .date-period {
+        @include border(0, 0, 1px, 0);
+        grid-area: 2/1/3/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .first-date {
+            @include square-size(150px,40px);
+            @include border(1px, 1px, 1px, 1px);
+            font-size: $paragraph-font-size;
+            color: $text-color;
+        }
+        .second-date {
+            @include square-size(170px,40px);
+            @include border(1px, 1px, 1px, 1px);
+            font-size: $paragraph-font-size;
+            color: $text-color;
+            .calendar {
+                @include icon(18px, black);
+            }
+        }
+        .refresh {
+            @include icon(20px, black);
+            background-color: $action-button-color;
+            &:hover {
+                background-color: $action-button-color-hover;
+            }
+        }
+    }
+    .graph {
+        grid-area: 3/1/4/2;
+        display: grid;
+        grid-template-columns: 2fr 3fr 3fr 2fr;
+        grid-template-rows: 50% 50%;
+        .list-left {
+            grid-area: 1/2/2/3;
+            .list-1, .list-2{
+                display: flex;
+                justify-content: space-between;
+                @include border(0, 0, 1px, 0);
+            }
+        }
+        .list-right {
+            grid-area: 1/3/2/4;
+            .list-3, .list-4 {
+                display: flex;
+                justify-content: space-between;
+                @include border(0, 0, 1px, 0);
+            }
+        }
+        .graph-btn {
+            grid-area: 2/2/3/4;
+            button {
+                @include square-size(120px, 40px);
+            }
+            .btn-1 {
+                background-color: $decline-button-color;
+            }
+            .btn-2 {
+                background-color: $decline-button-color;
+            }
+            .btn-3 {
+                background-color: $decline-button-color-hover;
+            }
+        }
+    }
+    
+}

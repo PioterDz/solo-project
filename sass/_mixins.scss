@@ -9,3 +9,8 @@
     height: $icon-size;
     color: $icon-color;
 }
+
+@mixin square-size($width, $height) {
+    width: $width;
+    height: $height;
+}
