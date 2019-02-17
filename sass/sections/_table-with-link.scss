@@ -1,4 +1,10 @@
 .table-with-link-row {
+    display: flex;
+    justify-content: center;
     @extend .list-with-digit;
-    
+    .two-icons {
+        img {
+        @include icon(16px,black);
+        }
+    }
 }

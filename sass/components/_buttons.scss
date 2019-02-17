@@ -21,12 +21,13 @@
     }
 }
 .top-menu-button {
-    @include square-size (50px, 50px);
+    @include square-size (60px, 60px);
     @include border(0, 1px, 1px, 1px);
     background-color: $page-background-color;
     @extend .flex-center;
     &:hover {
         background-color: $hover-background-color;
+        cursor: pointer;
     }
     img {
         @include icon(18px,black);

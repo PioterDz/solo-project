@@ -6,6 +6,7 @@
     @include square-size(120px, 40px);
     border: 0;
     cursor: pointer;
+    margin: 10px;
     .paragraph {
         margin: 0;
         padding: 0 10px;
@@ -16,7 +17,15 @@
     }
     .tab-circle {
         @extend .circle;
-        background-color: $checked-color;
         margin: 0 10px;
+    }
+    .circle-blue {
+        background-color: $first-tab-color;
+    }
+    .circle-orange {
+        background-color: $second-tab-color;
+    }
+    .circle-green {
+        background-color: $third-tab-color;
     }
 }
