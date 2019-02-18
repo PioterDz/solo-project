@@ -2,9 +2,9 @@
         @include border(0, 0, 1px, 0);
         grid-area: 2/1/3/2;
         height: 110px;
-        @extend .flex-center;
+        @include flex(center, center);
         .first-date {
-            @include square-size(150px,40px);
+            @include rectangle(150px,40px);
             @include border(1px, 0, 1px, 1px);
             font-size: $paragraph-font-size;
             color: $text-color;
@@ -14,7 +14,7 @@
             }
         }
         .second-date {
-            @include square-size(170px,40px);
+            @include rectangle(170px,40px);
             @include border(1px, 1px, 1px, 1px);
             font-size: $paragraph-font-size;
             color: $text-color;

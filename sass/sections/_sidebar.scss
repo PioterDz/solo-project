@@ -4,7 +4,7 @@
     background-color: $sidebar-background-color;
     .sidebar-up {
         .brand {
-            @extend .flex-center;
+            @include flex(center, center);
             background-color: $sidebar-background-color;
             height: 60px;
             .brand-name {
@@ -51,7 +51,7 @@
             display: flex;
             img {
                 border-radius: 50%;
-                @include square-size(40px, 40px);
+                @include rectangle(40px, 40px);
                 margin: 15px 0;
             }
             p {

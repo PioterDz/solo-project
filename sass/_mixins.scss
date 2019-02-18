@@ -10,16 +10,13 @@
     color: $icon-color;
 }
 
-@mixin square-size($width, $height) {
+@mixin rectangle($width, $height) {
     width: $width;
     height: $height;
 }
-.flex-center {
+@mixin flex ($justify-content, $align-items) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $justify-content;
+    align-items: $align-items;
 }
-.circle {
-    @include square-size(18px, 18px);
-    border-radius: 50%;
-}
+

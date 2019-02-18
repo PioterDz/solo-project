@@ -1,0 +1,11 @@
+.main {
+    .links {
+    margin: 20px;
+    background-color: $page-background-color;
+    @include flex(center, center);
+    flex-direction: column;
+        .addnew-btn {
+            margin: 20px;
+        }
+    }
+}
