@@ -10,13 +10,28 @@
     color: $icon-color;
 }
 
-@mixin rectangle($width, $height) {
-    width: $width;
-    height: $height;
+@mixin rectangle($rec-width, $rec-height) {
+    width: $rec-width;
+    height: $rec-height;
 }
-@mixin flex ($justify-content, $align-items) {
+@mixin flex($justify-content, $align-items) {
     display: flex;
     justify-content: $justify-content;
     align-items: $align-items;
 }
-
+@mixin grid($prefix) {
+    @for $i from 1 to 12 {
+        .col-#{$prefix}-#{$i} {
+            $width: 100% / 12 * $i;
+            flex: 0 0 $width;
+            max-width: $width;
+        }
+    }
+}
+@mixin grid-offset($prefix) {
+    @for $i from 1 to 12 {
+        .col-offset-#{$prefix}-#{$i} {
+            margin-left: 100% / 12 * $i;
+        }
+    }
+}

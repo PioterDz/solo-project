@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
     <div class="row">
-        <div class="navbar col-12">
+        <div class="navbar col-offset-xl-2">
             <div class="row">
                 <div class="navigation">
                     <div class="wallet">
@@ -35,7 +36,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="sidebar col-2">
+        <div class="sidebar col-xl-2">
             <div class="sidebar-up">
                 <div class="brand">
                     <a class="brand-name" href="#">Just do it</a>
@@ -45,13 +46,15 @@
                         <div class="bar"></div>
                     </div>
                 </div>
-                <a class="menu" href="/index.html"><img class="icon-general" alt="icon" src="/images/icons/general.svg">General</a>
-                <a class="menu" href="#"><img class="icon-details" alt="icon" src="/images/icons/details.svg">Details</a> 
-                <a class="menu" href="/templates/links.html"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Links</a>
-                <a class="menu" href="#"><img class="icon-banners" alt="icon" src="/images/icons/banners.svg">Banners</a>
-                <a class="menu" href="#"><img class="icon-personaldata" alt="icon" src="/images/icons/personaldata.svg">Personal data</a>
-                <a class="menu" href="#"><img class="icon-payout" alt="icon" src="/images/icons/payout.svg">Payout</a>
-                <a class="menu" href="#"><img class="icon-postback" alt="icon" src="/images/icons/postback.svg">Postback</a>
+                <div class="menu">
+                    <a class="menu-icon" href="/index.html"><img class="icon-general" alt="icon" src="/images/icons/general.svg">General</a>
+                    <a class="menu-icon" href="#"><img class="icon-details" alt="icon" src="/images/icons/details.svg">Details</a> 
+                    <a class="menu-icon" href="/templates/links.html"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Links</a>
+                    <a class="menu-icon" href="#"><img class="icon-banners" alt="icon" src="/images/icons/banners.svg">Banners</a>
+                    <a class="menu-icon" href="#"><img class="icon-personaldata" alt="icon" src="/images/icons/personaldata.svg">Personal data</a>
+                    <a class="menu-icon" href="#"><img class="icon-payout" alt="icon" src="/images/icons/payout.svg">Payout</a>
+                    <a class="menu-icon" href="#"><img class="icon-postback" alt="icon" src="/images/icons/postback.svg">Postback</a>
+                </div>
             </div>
             <div class="sidebar-down">
                 <header class="section-header manager">Your manager</header>
@@ -63,12 +66,12 @@
         </div>
     </div>
     <div class="main">
-        <section class="general col-11">
+        <section class="general col-offset-xl-2">
             <div class="row">
                 <div class="page-header general-header col-12">General statistic</div>
             </div>
             <div class="row">
-                <div class="date-period col-12">
+                <div class="date-period col-xl-12">
                     <div class="first-date">
                         <p>16.05.2016</p>
                     </div>
@@ -79,10 +82,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="table-1 col-12">
+                <div class="table-1 col-xl-12">
                     <div class="row">
-                        <div class="col-offset-3"></div>
-                        <div class="list-left col-3">
+                        <div class="col-offset-xl-3"></div>
+                        <div class="list-left col-xl-3">
                             <div class="list-with-digit">
                                 <p class="section-header">Visit Signups</p>
                                 <p class="text">124</p>
@@ -92,7 +95,7 @@
                                 <p class="text">445</p>
                             </div>
                         </div>
-                        <div class="list-right col-3">
+                        <div class="list-right col-xl-3">
                             <div class="list-with-digit">
                                 <p class="section-header">Net deposit</p>
                                 <p class="text">564</p>
@@ -106,14 +109,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-offset-3"></div>
-                <div class="graph-btn col-6">
+                <div class="col-xl-3"></div>
+                <div class="graph-btn col-xl-6">
                     <div class="section-header">Earnings chart</div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-offset-3"></div>
-                <div class="col-8">
+                <div class="col-xl-3"></div>
+                <div class="col-xl-8">
                     <div class="color-tab">
                         <div class="tab-circle circle-blue"></div>
                         <p class="paragraph">Signups</p> 
@@ -129,12 +132,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-offset-2"></div>
-                <div class="graph col-8">
+                <div class="col-xl-2"></div>
+                <div class="graph col-xl-8">
                     <img alt=graph src="images/wykres.png">
                 </div>
             </div>
         </section>
     </div>
+    </div>
+    <script type="text/javascript" src='js/script.js'></script>
 </body>
 </html>

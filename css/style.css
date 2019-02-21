@@ -178,64 +178,115 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-/* GRID */
-.col-1 { width: 8.33%; }
-
-.col-2 { width: 16.66%; }
-
-.col-3 { width: 25%; }
-
-.col-4 { width: 33.33%; }
-
-.col-5 { width: 41.66%; }
-
-.col-6 { width: 50%; }
-
-.col-7 { width: 58.33%; }
-
-.col-8 { width: 66.66%; }
-
-.col-9 { width: 75%; }
-
-.col-10 { width: 83.33%; }
-
-.col-11 { width: 91.66%; }
-
-.col-12 { width: 100%; }
-
-.col-offset-1 { margin-left: 8.33%; }
-
-.col-offset-2 { margin-left: 16.66%; }
-
-.col-offset-3 { margin-left: 25%; }
-
-.col-offset-4 { margin-left: 33.33%; }
-
-.col-offset-5 { margin-left: 41.66%; }
-
-.col-offset-6 { margin-left: 50%; }
-
-.col-offset-7 { margin-left: 58.33%; }
-
-.col-offset-8 { margin-left: 66.66%; }
-
-.col-offset-9 { margin-left: 75%; }
-
-.col-offset-10 { margin-left: 83.33%; }
-
-.col-offset-11 { margin-left: 91.66%; }
-
-.col-offset-12 { margin-left: 100%; }
-
+/* grid rules */
 .row::after { content: ""; display: table; clear: both; }
 
-[class*="col"] { float: left; padding: 1px; }
+[class*="col"] { float: left; }
+
+/* global styles */
+* { box-sizing: border-box; }
+
+.container { width: 100%; max-width: 1170px; margin: 0 auto; padding-left: 15px; padding-right: 15px; }
+
+.container-fluid { width: 100%; padding-left: 15px; padding-right: 15px; }
 
 body { background-color: #e3e3e3; }
 
 .main { margin-left: 20%; margin-top: 60px; }
 
 .circle, .color-tab .tab-circle { width: 18px; height: 18px; border-radius: 50%; }
+
+@media (max-width: 767px) { .col-sm-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
+  .col-sm-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
+  .col-sm-3 { -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; }
+  .col-sm-4 { -ms-flex: 0 0 33.33333%; flex: 0 0 33.33333%; max-width: 33.33333%; }
+  .col-sm-5 { -ms-flex: 0 0 41.66667%; flex: 0 0 41.66667%; max-width: 41.66667%; }
+  .col-sm-6 { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+  .col-sm-7 { -ms-flex: 0 0 58.33333%; flex: 0 0 58.33333%; max-width: 58.33333%; }
+  .col-sm-8 { -ms-flex: 0 0 66.66667%; flex: 0 0 66.66667%; max-width: 66.66667%; }
+  .col-sm-9 { -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; }
+  .col-sm-10 { -ms-flex: 0 0 83.33333%; flex: 0 0 83.33333%; max-width: 83.33333%; }
+  .col-sm-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
+  .col-offset-sm-1 { margin-left: 8.33333%; }
+  .col-offset-sm-2 { margin-left: 16.66667%; }
+  .col-offset-sm-3 { margin-left: 25%; }
+  .col-offset-sm-4 { margin-left: 33.33333%; }
+  .col-offset-sm-5 { margin-left: 41.66667%; }
+  .col-offset-sm-6 { margin-left: 50%; }
+  .col-offset-sm-7 { margin-left: 58.33333%; }
+  .col-offset-sm-8 { margin-left: 66.66667%; }
+  .col-offset-sm-9 { margin-left: 75%; }
+  .col-offset-sm-10 { margin-left: 83.33333%; }
+  .col-offset-sm-11 { margin-left: 91.66667%; } }
+
+@media (min-width: 768px) { .col-md-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
+  .col-md-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
+  .col-md-3 { -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; }
+  .col-md-4 { -ms-flex: 0 0 33.33333%; flex: 0 0 33.33333%; max-width: 33.33333%; }
+  .col-md-5 { -ms-flex: 0 0 41.66667%; flex: 0 0 41.66667%; max-width: 41.66667%; }
+  .col-md-6 { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+  .col-md-7 { -ms-flex: 0 0 58.33333%; flex: 0 0 58.33333%; max-width: 58.33333%; }
+  .col-md-8 { -ms-flex: 0 0 66.66667%; flex: 0 0 66.66667%; max-width: 66.66667%; }
+  .col-md-9 { -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; }
+  .col-md-10 { -ms-flex: 0 0 83.33333%; flex: 0 0 83.33333%; max-width: 83.33333%; }
+  .col-md-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
+  .col-offset-md-1 { margin-left: 8.33333%; }
+  .col-offset-md-2 { margin-left: 16.66667%; }
+  .col-offset-md-3 { margin-left: 25%; }
+  .col-offset-md-4 { margin-left: 33.33333%; }
+  .col-offset-md-5 { margin-left: 41.66667%; }
+  .col-offset-md-6 { margin-left: 50%; }
+  .col-offset-md-7 { margin-left: 58.33333%; }
+  .col-offset-md-8 { margin-left: 66.66667%; }
+  .col-offset-md-9 { margin-left: 75%; }
+  .col-offset-md-10 { margin-left: 83.33333%; }
+  .col-offset-md-11 { margin-left: 91.66667%; } }
+
+@media (min-width: 992px) { .col-lg-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
+  .col-lg-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
+  .col-lg-3 { -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; }
+  .col-lg-4 { -ms-flex: 0 0 33.33333%; flex: 0 0 33.33333%; max-width: 33.33333%; }
+  .col-lg-5 { -ms-flex: 0 0 41.66667%; flex: 0 0 41.66667%; max-width: 41.66667%; }
+  .col-lg-6 { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+  .col-lg-7 { -ms-flex: 0 0 58.33333%; flex: 0 0 58.33333%; max-width: 58.33333%; }
+  .col-lg-8 { -ms-flex: 0 0 66.66667%; flex: 0 0 66.66667%; max-width: 66.66667%; }
+  .col-lg-9 { -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; }
+  .col-lg-10 { -ms-flex: 0 0 83.33333%; flex: 0 0 83.33333%; max-width: 83.33333%; }
+  .col-lg-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
+  .col-offset-lg-1 { margin-left: 8.33333%; }
+  .col-offset-lg-2 { margin-left: 16.66667%; }
+  .col-offset-lg-3 { margin-left: 25%; }
+  .col-offset-lg-4 { margin-left: 33.33333%; }
+  .col-offset-lg-5 { margin-left: 41.66667%; }
+  .col-offset-lg-6 { margin-left: 50%; }
+  .col-offset-lg-7 { margin-left: 58.33333%; }
+  .col-offset-lg-8 { margin-left: 66.66667%; }
+  .col-offset-lg-9 { margin-left: 75%; }
+  .col-offset-lg-10 { margin-left: 83.33333%; }
+  .col-offset-lg-11 { margin-left: 91.66667%; } }
+
+@media (min-width: 1200px) { .col-xl-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
+  .col-xl-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
+  .col-xl-3 { -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; }
+  .col-xl-4 { -ms-flex: 0 0 33.33333%; flex: 0 0 33.33333%; max-width: 33.33333%; }
+  .col-xl-5 { -ms-flex: 0 0 41.66667%; flex: 0 0 41.66667%; max-width: 41.66667%; }
+  .col-xl-6 { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+  .col-xl-7 { -ms-flex: 0 0 58.33333%; flex: 0 0 58.33333%; max-width: 58.33333%; }
+  .col-xl-8 { -ms-flex: 0 0 66.66667%; flex: 0 0 66.66667%; max-width: 66.66667%; }
+  .col-xl-9 { -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; }
+  .col-xl-10 { -ms-flex: 0 0 83.33333%; flex: 0 0 83.33333%; max-width: 83.33333%; }
+  .col-xl-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
+  .col-offset-xl-1 { margin-left: 8.33333%; }
+  .col-offset-xl-2 { margin-left: 16.66667%; }
+  .col-offset-xl-3 { margin-left: 25%; }
+  .col-offset-xl-4 { margin-left: 33.33333%; }
+  .col-offset-xl-5 { margin-left: 41.66667%; }
+  .col-offset-xl-6 { margin-left: 50%; }
+  .col-offset-xl-7 { margin-left: 58.33333%; }
+  .col-offset-xl-8 { margin-left: 66.66667%; }
+  .col-offset-xl-9 { margin-left: 75%; }
+  .col-offset-xl-10 { margin-left: 83.33333%; }
+  .col-offset-xl-11 { margin-left: 91.66667%; } }
 
 /* components */
 .btn, .orange-btn, .grey-btn { width: 95px; height: 40px; font-family: Glyphter, Helvetica, Arial; cursor: pointer; border-radius: 5%; color: white; border: 0; }
@@ -327,11 +378,11 @@ body { background-color: #e3e3e3; }
 
 .sidebar .sidebar-up .brand .brand-name:hover { cursor: pointer; opacity: 1; }
 
-.sidebar .sidebar-up .menu { display: -ms-flexbox; display: flex; color: #797979; font-size: 14px; font-family: Glyphter, Helvetica, Arial; text-decoration: none; padding: 13px 0; padding-left: 18px; }
+.sidebar .sidebar-up .menu .menu-icon { display: -ms-flexbox; display: flex; color: #797979; font-size: 14px; font-family: Glyphter, Helvetica, Arial; text-decoration: none; padding: 13px 0; padding-left: 18px; }
 
-.sidebar .sidebar-up .menu img { width: 16px; height: 16px; color: black; padding-right: 5px; }
+.sidebar .sidebar-up .menu .menu-icon img { width: 16px; height: 16px; color: black; padding-right: 5px; }
 
-.sidebar .sidebar-up .menu:hover { color: white; background-color: #979797; border-style: solid; border-width: 0 0 0 10px; border-color: #979797; border-color: #ffa220; }
+.sidebar .sidebar-up .menu .menu-icon:hover { color: white; background-color: #979797; border-style: solid; border-width: 0 0 0 10px; border-color: #979797; border-color: #ffa220; }
 
 .sidebar .sidebar-down { padding-left: 18px; }
 
