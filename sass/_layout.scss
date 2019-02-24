@@ -1,4 +1,7 @@
 /* grid rules */
+.row {
+    width: 100%;
+}
 .row::after {
     content: "";
     display: table;
@@ -14,7 +17,7 @@
     box-sizing: border-box;
   }
   
-  .container-fluid {
+.container-fluid {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;

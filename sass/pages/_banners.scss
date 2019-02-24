@@ -27,5 +27,16 @@
             @include flex(space-between, flex-start);
             width: 100%;
         }
+        .selecting {
+            width: 100%;
+            .select-banners {
+                @include border(1px, 1px, 1px, 0);
+                width: 50%;
+            }
+            .select-websites {
+                @include border(1px, 0, 1px, 0);
+                width: 50%;
+            }
+        }
     }
 }

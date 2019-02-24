@@ -13,9 +13,14 @@ document.querySelector('.hamburger').addEventListener('click', function(e) {
 
 var quitModal = document.getElementById('quitModal');
 var quitBtn = document.getElementById('quitBtn');
+var quitModalBtn = document.getElementById('quitModalBtn');
 
 quitBtn.onclick = function () {
     quitModal.style.display = "block";
+}
+
+quitModalBtn.onclick = function () {
+    quitModal.style.display = "none";
 }
 
 window.onclick = function(event) {
