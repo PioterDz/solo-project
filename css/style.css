@@ -179,7 +179,7 @@ template { display: none; }
 [hidden] { display: none; }
 
 /* grid rules */
-.row { width: 100%; }
+.row { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .row::after { content: ""; display: table; clear: both; }
 
