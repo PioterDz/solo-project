@@ -20,7 +20,7 @@
     align-items: $align-items;
 }
 @mixin grid($prefix) {
-    @for $i from 1 to 12 {
+    @for $i from 1 to 13 {
         .col-#{$prefix}-#{$i} {
             $width: 100% / 12 * $i;
             flex: 0 0 $width;
@@ -29,7 +29,7 @@
     }
 }
 @mixin grid-offset($prefix) {
-    @for $i from 1 to 12 {
+    @for $i from 1 to 13 {
         .col-offset-#{$prefix}-#{$i} {
             margin-left: 100% / 12 * $i;
         }

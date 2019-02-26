@@ -10,6 +10,7 @@
 }
 [class*="col"] {
     float:left;
+    min-height: 1px;
 }
 
 /* global styles */
@@ -30,7 +31,6 @@ body {
     background-color: $body-background-color;
 }
 .main {
-    margin-left: 20%;
     margin-top: 60px;
 }
 .circle {

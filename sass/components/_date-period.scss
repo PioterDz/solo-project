@@ -20,14 +20,15 @@
             color: $text-color;
             display: flex;
             border-radius: 5%;
+            position: relative;
             p {
                 margin-left: 20px;
             }
             .icon-calendar {
                 @include icon(18px, black);
                 position: absolute;
-                transform: translate(0,50%);
-                left: 63%;
+                transform: translate(50%,50%);
+                left: 90px;
                 cursor: pointer;
                 margin: 3px 0 0 40px;
             }

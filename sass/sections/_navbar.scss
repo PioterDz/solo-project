@@ -2,6 +2,7 @@
     width: 100%;
     position: fixed;
     background-color: $page-background-color;
+    @include flex(flex-end, flex-start);
     .row {
         .navigation {
             @include flex(flex-end, flex-start);

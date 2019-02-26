@@ -1,15 +1,25 @@
 .general {
     background-color: $page-background-color;
-    margin: 10px auto;
+    margin: 10px 0;
     .table-1 {
-        .list-left {
-            margin: 40px 10px 40px 0;
+        .table-row {
+            @include flex(center, center);
+            .list-left {
+                margin: 40px 10px 40px 0;
+            }
+            .list-right {
+                margin: 40px 0 40px 10px;
+            }
         }
-        .list-right {
-            margin: 40px 0 40px 10px;
-        }
+    }
+    .earnings-text {
+        @include flex(center, center);
+    }
+    .clr-tabs {
+        @include flex(center, center);
     }
     .graph {
         margin: 20px auto;
+
     }
 }
