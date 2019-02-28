@@ -14,9 +14,15 @@
 @import "components/hamburger-bar";
 @import "components/date-period";
 @import "components/list-with-digit";
+@import "components/input";
+@import "components/checkbox";
 /* sections */
 @import "sections/sidebar";
 @import "sections/navbar";
 @import "sections/table-with-link";
+@import "sections/modal-quit";
 /* pages */
 @import "pages/general";
+@import "pages/links";
+@import "pages/personal-data";
+@import "pages/banners";

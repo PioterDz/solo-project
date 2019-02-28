@@ -7,7 +7,6 @@ $sidebar-background-color: #333333;
 $page-background-color: white;
 $body-background-color: #e3e3e3;
 $border-color: #979797;
-$text-color: black;
 /* buttons */
 $action-button-color: #f58220;
 $action-button-color-hover: #ffa220;
@@ -35,9 +34,9 @@ $brand-font: Glyphter, Helvetica, Arial;
 $paragraph-font: Glyphter, Helvetica, Arial;
 /* input */
 $placeholder-color: #f5f5f2;
-$input-borderbox: borderbox #f5f5f2;
-$input-borderbox-click: borderbox #979797;
-$input-borderbox-warn: borderbox #ff0000;
+$input-borderbox: #f5f5f2;
+$input-borderbox-click: #979797;
+$input-borderbox-warn: #ff0000;
 /* messenger */
 $online-color: #04ae00;
 $offline-color: #e3e3e3;
@@ -47,7 +46,10 @@ $manager-message-background: #e3e3e3;
 $manager-message-color: #333333;
 /* checkbox */
 $checked-color: #04AE00;
-
+/* tabs */
+$first-tab-color: #56819F;
+$second-tab-color: #F58220;
+$third-tab-color: #04AE00;
 /* paddings */
 $sidebar-padding-left: 18px;
 

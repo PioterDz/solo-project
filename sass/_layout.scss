@@ -1,11 +1,39 @@
-/* grid */
-body {
-    background-color: $body-background-color;
-    .main {
-        display: grid;
-        grid-template-columns: 1fr 6fr;
-        grid-template-rows: 60px 1fr 1fr;
-    }
+/* grid rules */
+.row {
+    width: 100%;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class*="col"] {
+    float:left;
 }
 
+/* global styles */
+
+* {
+    box-sizing: border-box;
+  }
+  
+.container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+
+
+body {
+    background-color: $body-background-color;
+}
+.main {
+    margin-left: 20%;
+    margin-top: 60px;
+}
+.circle {
+    @include rectangle(18px, 18px);
+    border-radius: 50%;
+}
 

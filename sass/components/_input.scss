@@ -1,0 +1,13 @@
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    border-color: $input-borderbox;
+    font-family: $paragraph-font;
+    border-style: solid; 
+    :focus {
+        border-color: $input-borderbox-click;
+    }
+    :invalid {
+        border-color: $input-borderbox-warn;
+    }
+}

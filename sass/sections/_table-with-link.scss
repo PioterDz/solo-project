@@ -1,4 +1,9 @@
 .table-with-link-row {
+    width: 80%;
     @extend .list-with-digit;
-    
+    .two-icons {
+        img {
+        @include icon(16px,black);
+        }
+    }
 }

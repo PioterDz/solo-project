@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+    @include grid('sm');
+    @include grid-offset('sm');
+    .show {
+
+    }
+}
+@media (min-width: 768px) {
+    @include grid('md');
+    @include grid-offset('md');
+}
+@media (min-width: 992px) {
+    @include grid('lg');
+    @include grid-offset('lg');
+}
+@media (min-width: 1200px) {
+    @include grid('xl');
+    @include grid-offset('xl');
+    .container {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+}

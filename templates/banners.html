@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kodilla's Solo Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta name="description" content="Project">
+    <meta name="author" content="Piotr Dz.">
+    <link src="./images/icons/fonts/Glyphter.svg" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid container">
+    <div class="row">
+        <div class="navbar col-offset-xl-2">
+            <div class="row">
+                <div class="navigation">
+                    <div class="wallet">
+                        <img alt="icon" class="icon-wallet" src="/images/icons/wallet.svg">
+                        <p class="paragraph">$1,500.00</p>
+                        <img alt="icon" class="icon-arrow-down" src="/images/icons/arrow-down.svg">
+                    </div>
+                    <div class="notification top-menu-button">
+                        <img alt="icon" class="icon-notification" src="/images/icons/notification.svg">
+                    </div>
+                    <div class="profile">
+                        <img alt="icon" class="icon-profile" src="/images/icons/profile.svg">
+                        <p class="small-link">Leonardo Dicaprio</p>
+                    </div>
+                    <div class="quit top-menu-button" id="quitBtn">
+                        <img alt="icon" class="icon-quit" src="/images/icons/quit.svg">
+                    </div>
+                    <div id="quitModal" class="quit-modal">
+                        <div class="quit-modal-content">
+                            <p class="paragraph quit-modal-p">Do you really want to quit?</p>
+                            <button class="grey-btn quit-modal-btn">Cancel</button>
+                            <button class="orange-btn quit-modal-btn">Quit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="sidebar col-xl-2">
+            <div class="sidebar-up">
+                <div class="brand">
+                    <a class="brand-name" href="#">Just do it</a>
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a class="menu-icon" href="/index.html"><img class="icon-general" alt="icon" src="/images/icons/general.svg">General</a>
+                    <a class="menu-icon" href="#"><img class="icon-details" alt="icon" src="/images/icons/details.svg">Details</a> 
+                    <a class="menu-icon" href="/templates/links.html"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Links</a>
+                    <a class="menu-icon" href="/templates/banners.html"><img class="icon-banners" alt="icon" src="/images/icons/banners.svg">Banners</a>
+                    <a class="menu-icon" href="/templates/personal-data.html"><img class="icon-personaldata" alt="icon" src="/images/icons/personaldata.svg">Personal data</a>
+                    <a class="menu-icon" href="#"><img class="icon-payout" alt="icon" src="/images/icons/payout.svg">Payout</a>
+                    <a class="menu-icon" href="#"><img class="icon-postback" alt="icon" src="/images/icons/postback.svg">Postback</a>
+                </div>
+            </div>
+            <div class="sidebar-down">
+                <header class="section-header manager">Your manager</header>
+                <div class="wrapper">
+                    <img src="https://images.pexels.com/photos/842567/pexels-photo-842567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="manager">
+                    <p class="large-link">Mikhael E.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="row">
+        <section class="links col-xl-11 col-lg-11">
+            <div class="row">
+                <div class="page-header col-xl-12 col-lg-12">Banners</div>
+            </div>
+            <button class="orange-btn addnew-btn" id="banner-modal-btn">+add new</button>
+            <div id="bannerModal" class="banner-modal">
+                <div class="banner-modal-content">
+                    <div class="row">
+                        <div class="add-banner-header col-xl-12 col-lg-12">
+                            <p class="page header">Add banners</p>
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form class="banner-options col-xl-12 col-lg-12">
+                            <label class="section-header">Scheme name</label>
+                            <input type="text" name="scheme-name" placeholder="Name">
+                            <label class="section-header">Compain</label>
+                                <select placeholder="Select">
+                                    <option value="lorem">Lorem</option>
+                                    <option value="ipsum">Ipsum</option>
+                                    <option value="dolor">Dolor</option>
+                                <select>
+                            <label class="section-header">Language</label>
+                                <select placeholder="Select">
+                                    <option value="en">EN</option>
+                                    <option value="ipsum">GER</option>
+                                    <option value="dolor">FRA</option>
+                                <select>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="banner-options col-xl-12 col-lg-12">
+                            <label class="section-header">Weight-height</p>
+                                <select placeholder="Select">
+                                    <option value="lorem">Lorem</option>
+                                    <option value="ipsum">Ipsum</option>
+                                    <option value="dolor">Dolor</option>
+                                </select>
+                            <label class="section-header">Design</p>
+                                <select placeholder="Select">
+                                    <option value="lorem">Lorem</option>
+                                    <option value="ipsum">Ipsum</option>
+                                    <option value="dolor">Dolor</option>
+                                </select>
+                            <label class="section-header">File type</p>
+                                <select placeholder="All">
+                                    <option value="lorem">Lorem</option>
+                                    <option value="ipsum">Ipsum</option>
+                                    <option value="dolor">Dolor</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 selecting">
+                            <div class="row">
+                                <div class="select-banners col-xl-6">
+                                    <p class="section header">Select banners</p>
+                                    <input type="checkbox" name="banner-1"><p class="text">Banner main<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="banner-2"><p class="text">Sign up banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="banner-3"><p class="text">Left banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="banner-4"><p class="text">Right banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="banner-5"><p class="text">Bottom banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="banner-6"><p class="text">Long banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="banner-7"><p class="text">Personal cabinet banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="banner-8"><p class="text">Popup banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="select-websites col-xl-6">
+                                    <p class="section header">Select websites</p>
+                                    <input type="checkbox" name="website-1"><p class="text">Landing page money<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="website-2"><p class="text">LP your choice<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="website-3"><p class="text">LP Wallet<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="website-4"><p class="text">E-shop 01<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="website-5"><p class="text">Toy store<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="website-6"><p class="text">Book store<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="website-7"><p class="text">Charity<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                    <input type="checkbox" name="website-8"><p class="text">LP icons store<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 banner-end">
+                            <button class="grey-btn"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Copy link</button>
+                            <button class="orange-btn">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-with-link-row">
+                <p class="section-header">Banner main</p>
+                <p class="link">http://www.website.com/bannermain.gif</p>
+                <div class="two-icons">
+                    <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                    <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                </div>
+            </div>
+            <div class="table-with-link-row">
+                <p class="section-header">Sign up banner</p>
+                <p class="link">http://www.website.com/signup.gif</p>
+                <div class="two-icons">
+                    <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                    <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                </div>
+            </div>
+            <div class="table-with-link-row">
+                <p class="section-header">Banner left side</p>
+                <p class="link">http://www.website.com/leftside.gif</p>
+                <div class="two-icons">
+                    <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                    <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                </div>
+            </div>
+            <div class="table-with-link-row">
+                <p class="section-header">Vertical banner</p>
+                <p class="link">http://www.website.com/vert.gif</p>
+                <div class="two-icons">
+                    <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                    <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                </div>
+            </div>
+            <div class="table-with-link-row">
+                <p class="section-header">Front banner</p>
+                <p class="link">http://www.website.com/front.gif</p>
+                <div class="two-icons">
+                    <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                    <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                </div>
+            </div>
+            <div class="table-with-link-row">
+                <p class="section-header">Horizontal banner</p>
+                <p class="link">http://www.website.com/horizontal.gif</p>
+                <div class="two-icons">
+                    <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                    <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                </div>
+            </div>
+            <button class="orange-btn addnew-btn" id="banner-modal-btn">+add new</button>
+        </section>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src='../js/script.js'></script>
+</body>
+</html>
