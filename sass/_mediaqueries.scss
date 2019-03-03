@@ -1,6 +1,15 @@
 @media (max-width: 767px) {
     @include grid('sm');
     @include grid-offset('sm');
+    .navbar {
+        visibility: hidden;
+    }
+    .sidebar {
+        height: 60px;
+        .sidebar-menu {
+            visibility: hidden;
+        }
+    }
 }
 @media (min-width: 768px) {
     @include grid('md');

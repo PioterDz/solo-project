@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="description" content="Project">
     <meta name="author" content="Piotr Dz.">
-    <link src="./images/icons/fonts/Glyphter.svg" rel="stylesheet">
+    <link href="./images/icons/fonts/Glyphter.svg" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 <body>
     <div class="container-fluid container">
@@ -35,7 +36,7 @@
                             <div class="quit-modal-content">
                                 <p class="paragraph quit-modal-p">Do you really want to quit?</p>
                                 <button class="grey-btn quit-modal-btn" id="quitModalBtn">Cancel</button>
-                                <button class="orange-btn quit-modal-btn" href="https://kodilla.com">Quit</button>
+                                <button class="orange-btn quit-modal-btn"><a href="https://kodilla.com">Quit</a></button>
                             </div>
                         </div>
                     </div>
@@ -43,7 +44,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="sidebar col-xl-2 col-lg-2 col-md-2 col-sm-12">
+            <div class="sidebar col-xl-2 col-lg-2 col-md-12 col-sm-12">
                 <div class="sidebar-up">
                     <div class="brand">
                         <a class="brand-name" href="#">Just do it</a>
@@ -53,6 +54,8 @@
                             <div class="bar"></div>
                         </div>
                     </div>
+                </div>
+                <div class="sidebar-menu show">
                     <div class="menu">
                         <a class="menu-icon" href="/index.html"><img class="icon-general" alt="icon" src="/images/icons/general.svg">General</a>
                         <a class="menu-icon" href="#"><img class="icon-details" alt="icon" src="/images/icons/details.svg">Details</a> 
@@ -62,12 +65,12 @@
                         <a class="menu-icon" href="#"><img class="icon-payout" alt="icon" src="/images/icons/payout.svg">Payout</a>
                         <a class="menu-icon" href="#"><img class="icon-postback" alt="icon" src="/images/icons/postback.svg">Postback</a>
                     </div>
-                </div>
-                <div class="sidebar-down">
-                    <header class="section-header manager">Your manager</header>
-                    <div class="wrapper">
-                        <img src="https://images.pexels.com/photos/842567/pexels-photo-842567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="manager">
-                        <p class="large-link">Mikhael E.</p>
+                    <div class="sidebar-down">
+                        <header class="section-header manager">Your manager</header>
+                        <div class="wrapper">
+                            <img src="https://images.pexels.com/photos/842567/pexels-photo-842567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="manager">
+                            <p class="large-link">Mikhael E.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,7 +138,7 @@
                 </div>
                 <div class="row">
                     <div class="graph col-xl-8 col-lg-8 col-md-8 col-sm-8">
-                        <img alt=graph src="images/wykres.png">
+                        <canvas id="myChart"></canvas>
                     </div>
                 </div>
             </section>

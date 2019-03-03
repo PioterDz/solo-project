@@ -9,7 +9,7 @@
     clear: both;
 }
 [class*="col"] {
-    float:left;
+    float: left;
     min-height: 1px;
 }
 
@@ -26,7 +26,11 @@
 }
   
 
-
+a {
+    text-decoration: none;
+    font-family: $paragraph-font;
+    color: $text-color-hover;
+}
 body {
     background-color: $body-background-color;
 }

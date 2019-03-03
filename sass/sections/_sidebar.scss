@@ -1,6 +1,5 @@
 .sidebar {
     position: fixed;
-    height: 100%;
     background-color: $sidebar-background-color;
     .sidebar-up {
         .brand {
@@ -25,6 +24,8 @@
             }
         }
         @include border(0, 0, 1px, 0);
+    }
+    .sidebar-menu {
         .menu {
             .menu-icon {
                 display: flex;
