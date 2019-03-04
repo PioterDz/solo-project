@@ -1,6 +1,6 @@
 .main {
     .links {
-    margin: 20px;
+    margin: 10px 0;
     background-color: $page-background-color;
     @include flex(center, center);
     flex-direction: column;

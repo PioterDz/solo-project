@@ -1,6 +1,8 @@
 .sidebar {
+    width: 15%;
     position: fixed;
     background-color: $sidebar-background-color;
+    height: 100%;
     .sidebar-up {
         .brand {
             @include flex(center, center);
@@ -49,6 +51,7 @@
         }
     }
     .sidebar-down {
+        @include border(1px, 0, 0, 0);
         padding-left: $sidebar-padding-left;
         .manager {
             padding-top: 27px;

@@ -434,8 +434,8 @@ template {
 
 .container-fluid {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 16%;
+  padding-right: 1%; }
 
 a {
   text-decoration: none;
@@ -917,8 +917,10 @@ input[type="password"] {
 
 /* sections */
 .sidebar {
+  width: 15%;
   position: fixed;
-  background-color: #333333; }
+  background-color: #333333;
+  height: 100%; }
   .sidebar .sidebar-up {
     border-style: solid;
     border-width: 0 0 1px 0;
@@ -963,6 +965,9 @@ input[type="password"] {
       border-color: #979797;
       border-color: #ffa220; }
   .sidebar .sidebar-down {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: #979797;
     padding-left: 18px; }
     .sidebar .sidebar-down .manager {
       padding-top: 27px; }
@@ -983,11 +988,11 @@ input[type="password"] {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start; }
-  .navbar .row .navigation {
+  .navbar .navigation {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start; }
-    .navbar .row .navigation .wallet {
+    .navbar .navigation .wallet {
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -996,15 +1001,15 @@ input[type="password"] {
       border-color: #979797;
       width: 190px;
       height: 60px; }
-      .navbar .row .navigation .wallet img {
+      .navbar .navigation .wallet img {
         width: 18px;
         height: 18px;
         color: black; }
-      .navbar .row .navigation .wallet .icon-arrow:hover {
+      .navbar .navigation .wallet .icon-arrow:hover {
         cursor: pointer; }
-      .navbar .row .navigation .wallet p {
+      .navbar .navigation .wallet p {
         margin: 0; }
-    .navbar .row .navigation .profile {
+    .navbar .navigation .profile {
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -1013,13 +1018,13 @@ input[type="password"] {
       border-color: #979797;
       width: 170px;
       height: 60px; }
-      .navbar .row .navigation .profile:hover {
+      .navbar .navigation .profile:hover {
         cursor: pointer; }
-      .navbar .row .navigation .profile img {
+      .navbar .navigation .profile img {
         width: 18px;
         height: 18px;
         color: black; }
-    .navbar .row .navigation .quit {
+    .navbar .navigation .quit {
       cursor: pointer; }
 
 .table-with-link-row {
@@ -1077,7 +1082,7 @@ input[type="password"] {
     margin: 20px auto; }
 
 .main .links {
-  margin: 20px;
+  margin: 10px 0;
   background-color: white;
   display: flex;
   justify-content: center;
