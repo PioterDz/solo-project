@@ -31,18 +31,21 @@ document.body.addEventListener('click', function(event) {
 
 // BANNERS MODAL 
 
-var bannerModal = document.getElementById('bannerModal');
-var openBannerModalBtn = document.getElementById('bannerModalBtn');
-var close = document.getElementsByClassName('close')[0];
+var bannerModal = document.getElementById('banner-modal-id');
+var openBannerModalBtn = document.getElementById('upper-banner-modal-open-btn');
+var quitBannerModalSpan = document.getElementById('quit-banner-modal');
 
+if (openBannerModalBtn) {
 openBannerModalBtn.addEventListener('click', function () {
     console.log('banner banner');
     bannerModal.style.display = "block";
 })
-
-close.addEventListener('click', function () {
+}
+if (quitBannerModalSpan) {
+quitBannerModalSpan.addEventListener('click', function () {
     bannerModal.style.display = "none";
 })
+}
 
 document.body.addEventListener('click', function(event) {
     if (event.target == bannerModal) {

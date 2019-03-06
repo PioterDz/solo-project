@@ -1,4 +1,31 @@
 .personal-data {
     background-color: $page-background-color;
-    
+    margin: 1%;
+    .orange-btn {
+        margin: 10px;
+    }
+    .personal-data-container {
+        @include flex(center, center);
+        flex-direction: column;
+        .field {
+            padding: 20px;
+            width: 100%;
+            @include border(0, 0, 1px, 0);
+            [class*="personaldata-"] {
+                @include flex(flex-start, flex-start);
+                flex-direction: column;
+            }
+            .personaldata-description {
+                width: 20%;
+                label {
+                    margin: 10px 0;
+                }
+            }
+            .personaldata-input {
+                input {
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
 }

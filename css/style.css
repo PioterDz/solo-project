@@ -1092,7 +1092,32 @@ input[type="password"] {
     margin: 20px; }
 
 .personal-data {
-  background-color: white; }
+  background-color: white;
+  margin: 1%; }
+  .personal-data .orange-btn {
+    margin: 10px; }
+  .personal-data .personal-data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .personal-data .personal-data-container .field {
+      padding: 20px;
+      width: 100%;
+      border-style: solid;
+      border-width: 0 0 1px 0;
+      border-color: #979797; }
+      .personal-data .personal-data-container .field [class*="personaldata-"] {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column; }
+      .personal-data .personal-data-container .field .personaldata-description {
+        width: 20%; }
+        .personal-data .personal-data-container .field .personaldata-description label {
+          margin: 10px 0; }
+      .personal-data .personal-data-container .field .personaldata-input input {
+        margin: 5px 0; }
 
 .banner-modal {
   display: none;

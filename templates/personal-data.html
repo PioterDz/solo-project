@@ -11,57 +11,52 @@
     <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
 </head>
 <body>
-<div class="container-fluid container">
-    <div class="row">
-        <div class="navbar col-offset-xl-2">
-            <div class="row">
-                <div class="navigation">
-                    <div class="wallet">
-                        <img alt="icon" class="icon-wallet" src="/images/icons/wallet.svg">
-                        <p class="paragraph">$1,500.00</p>
-                        <img alt="icon" class="icon-arrow-down" src="/images/icons/arrow-down.svg">
-                    </div>
-                    <div class="notification top-menu-button">
-                        <img alt="icon" class="icon-notification" src="/images/icons/notification.svg">
-                    </div>
-                    <div class="profile">
-                        <img alt="icon" class="icon-profile" src="/images/icons/profile.svg">
-                        <p class="small-link">Leonardo Dicaprio</p>
-                    </div>
-                    <div class="quit top-menu-button" id="quitBtn">
-                        <img alt="icon" class="icon-quit" src="/images/icons/quit.svg">
-                    </div>
-                    <div id="quitModal" class="quit-modal">
-                        <div class="quit-modal-content">
-                            <p class="paragraph quit-modal-p">Do you really want to quit?</p>
-                            <button class="grey-btn quit-modal-btn">Cancel</button>
-                            <button class="orange-btn quit-modal-btn">Quit</button>
-                        </div>
-                    </div>
+    <div class="navbar">
+        <div class="navigation">
+            <div class="wallet">
+                <img alt="icon" class="icon-wallet" src="/images/icons/wallet.svg">
+                <p class="paragraph">$1,500.00</p>
+                <img alt="icon" class="icon-arrow-down" src="/images/icons/arrow-down.svg">
+            </div>
+            <div class="notification top-menu-button">
+                <img alt="icon" class="icon-notification" src="/images/icons/notification.svg">
+            </div>
+            <div class="profile">
+                <img alt="icon" class="icon-profile" src="/images/icons/profile.svg">
+                <p class="small-link">Leonardo Dicaprio</p>
+            </div>
+            <div class="quit top-menu-button" id="quitBtn">
+                <img alt="icon" class="icon-quit" src="/images/icons/quit.svg">
+            </div>
+            <div id="quitModal" class="quit-modal">
+                <div class="quit-modal-content">
+                    <p class="paragraph quit-modal-p">Do you really want to quit?</p>
+                    <button class="grey-btn quit-modal-btn" id="quitModalBtn">Cancel</button>
+                    <button class="orange-btn quit-modal-btn"><a href="https://kodilla.com">Quit</a></button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="sidebar col-xl-2">
-            <div class="sidebar-up">
-                <div class="brand">
-                    <a class="brand-name" href="#">Just do it</a>
-                    <div class="hamburger">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
+    <div class="sidebar">
+        <div class="sidebar-up">
+            <div class="brand">
+                <a class="brand-name" href="#">Just do it</a>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-                <div class="menu">
-                    <a class="menu-icon" href="/index.html"><img class="icon-general" alt="icon" src="/images/icons/general.svg">General</a>
-                    <a class="menu-icon" href="#"><img class="icon-details" alt="icon" src="/images/icons/details.svg">Details</a> 
-                    <a class="menu-icon" href="/templates/links.html"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Links</a>
-                    <a class="menu-icon" href="/templates/banners.html"><img class="icon-banners" alt="icon" src="/images/icons/banners.svg">Banners</a>
-                    <a class="menu-icon" href="/templates/personal-data.html"><img class="icon-personaldata" alt="icon" src="/images/icons/personaldata.svg">Personal data</a>
-                    <a class="menu-icon" href="#"><img class="icon-payout" alt="icon" src="/images/icons/payout.svg">Payout</a>
-                    <a class="menu-icon" href="#"><img class="icon-postback" alt="icon" src="/images/icons/postback.svg">Postback</a>
-                </div>
+            </div>
+        </div>
+        <div class="sidebar-menu show">
+            <div class="menu">
+                <a class="menu-icon" href="/index.html"><img class="icon-general" alt="icon" src="/images/icons/general.svg">General</a>
+                <a class="menu-icon" href="#"><img class="icon-details" alt="icon" src="/images/icons/details.svg">Details</a> 
+                <a class="menu-icon" href="/templates/links.html"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Links</a>
+                <a class="menu-icon" href="/templates/banners.html"><img class="icon-banners" alt="icon" src="/images/icons/banners.svg">Banners</a>
+                <a class="menu-icon" href="/templates/personal-data.html"><img class="icon-personaldata" alt="icon" src="/images/icons/personaldata.svg">Personal data</a>
+                <a class="menu-icon" href="#"><img class="icon-payout" alt="icon" src="/images/icons/payout.svg">Payout</a>
+                <a class="menu-icon" href="#"><img class="icon-postback" alt="icon" src="/images/icons/postback.svg">Postback</a>
             </div>
             <div class="sidebar-down">
                 <header class="section-header manager">Your manager</header>
@@ -72,55 +67,68 @@
             </div>
         </div>
     </div>
-    <div class="main">
+    <div class="container-fluid container">
         <div class="row">
-            <div class="col-12">
-                <form class="personal-data" action="" method="POST">
-                    <div class="row">
-                        <div class="page-header col-12">Personal data</div>
-                    </div>
-                    <div class="row">
-                        <div class="field col-12">
+        <div class="main col-sm-12 col-md-12">
+            <form class="personal-data" action="" method="POST">
+                <div class="row">
+                    <div class="page-header col-sm-12 col-md-12">Personal data</div>
+                </div>
+                <div class="personal-data-container">
+                    <div class="field">
+                        <div class="personaldata-description col-offset-sm-3 col-offset-md-3">
                             <label class="section-header">Name</label>
-                            <input type="text" name="user-name">
                             <label class="section-header">Surname</label>
-                            <input type="text" name="user-surname">
                             <label class="section-header">Email</label>
-                            <input type="email" name="user-email">
                             <label class="section-header">Phone number</label>
+                        </div>
+                        <div class="personaldata-input">
+                            <input type="text" name="user-name">
+                            <input type="text" name="user-surname">
+                            <input type="email" name="user-email">
                             <input type="text" name="user-phone">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="field col-12">
+                    <div class="field">
+                        <div class="personaldata-description col-offset-sm-3 col-offset-md-3">
                             <label class="section-header">Skype</label>
-                            <input type="text" name="user-skype">
                             <label class="section-header">ICQ</label>
-                            <input type="text" name="user-icq">
                             <label class="section-header">Msn</label>
+                        </div>
+                        <div class="personaldata-input">
+                            <input type="text" name="user-skype">
+                            <input type="text" name="user-icq">
                             <input type="email" name="user-msn">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="personaldata-description col-offset-sm-3 col-offset-md-3">
                             <label class="section-header">Wallet</label>
+                        </div>
+                        <div class="personaldata-input">
                             <input type="text" name="user-wallet">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="field col-12">
+                    <div class="field">
+                        <div class="personaldata-description col-offset-sm-3 col-offset-md-3">
                             <label class="section-header">Password</label>
-                            <input type="password" name="user-password">
                             <label class="section-header">Repeat</label>
+                        </div>
+                        <div class="personaldata-input">
+                            <input type="password" name="user-password">
                             <input type="password" name="user-password">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-offset-xl-6">
-                            <button type="submit" class="orange-btn">Save</button>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-offset-sm-5 col-offset-md-5">
+                        <button type="submit" class="orange-btn">Save</button>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
+        </div>
         </div>
     </div>
-</div>
 <script type="text/javascript" src='../js/script.js'></script>
 </body>
 </html>
