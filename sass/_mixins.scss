@@ -19,6 +19,32 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+@mixin btn($button-color) {
+    background-color: $button-color;
+    @include rectangle(95px, 40px);
+    font-family: $paragraph-font;
+    cursor: pointer;
+    border-radius: 5%;
+    color: $text-color-hover;
+    border: 0; 
+}
+
+@mixin link($color-of-link, $link-font-size) {
+    color: $color-of-link;
+    font-size: $link-font-size;
+    &:hover {
+        color: $link-color-hover;
+        cursor: pointer;
+        background-color: $hover-background-color;
+    }
+}
+
+@mixin circle($circle-size-horizontal, $circle-size-vertical) {
+    @include rectangle($circle-size-horizontal, $circle-size-vertical);
+    border-radius: 50%;
+}
+
 @mixin grid($prefix) {
     @for $i from 1 through 12 {
         .col-#{$prefix}-#{$i} {

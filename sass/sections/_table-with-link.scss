@@ -1,6 +1,9 @@
 .table-with-link-row {
-    width: 80%;
+    width: 70%;
     @extend .list-with-digit;
+    .link {
+        margin-left: 15%;
+    }
     .two-icons {
         img {
         @include icon(16px,black);

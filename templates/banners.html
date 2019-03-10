@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="sidebar">
+    <div class="sidebar change-height">
         <div class="sidebar-up">
             <div class="brand">
                 <a class="brand-name" href="#">Just do it</a>
@@ -48,8 +48,8 @@
                 </div>
             </div>
         </div>
-        <div class="sidebar-menu show">
-            <div class="menu">
+        <div class="menu">
+            <div class="sidebar-menu">
                 <a class="menu-icon" href="/index.html"><img class="icon-general" alt="icon" src="/images/icons/general.svg">General</a>
                 <a class="menu-icon" href="#"><img class="icon-details" alt="icon" src="/images/icons/details.svg">Details</a> 
                 <a class="menu-icon" href="/templates/links.html"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Links</a>
@@ -69,23 +69,23 @@
     </div>
     <div class="container-fluid container">
         <div class="row">
-        <div class="main col-sm-12 col-md-12">
+        <div class="main col-sm-12 col-md-12 col-lg-12">
             <div class="row">
-            <section class="banners links col-sm-12 col-md-12">
-                <div class="row">
-                    <div class="page-header col-sm-12 col-md-12">Banners</div>
+            <section class="banners links col-sm-12 col-md-12 col-lg-12">
+                <div class="row banners-row">
+                    <div class="page-header col-sm-12 col-md-12 col-lg-12">Banners</div>
                 </div>
                 <button class="orange-btn addnew-btn" id="upper-banner-modal-open-btn">+add new</button>
                 <div id="banner-modal-id" class="banner-modal">
                     <div class="banner-modal-content">
                         <div class="row">
-                            <div class="add-banner-header col-sm-12 col-md-12">
+                            <div class="add-banner-header col-sm-12 col-md-12 col-lg-12">
                                 <p class="page-header">Add banners</p>
                                 <span class="close" id="quit-banner-modal">&times;</span>
                             </div>
                         </div>
                         <div class="row">
-                            <form class="banner-options col-sm-12 col-md-12">
+                            <form class="banner-options col-sm-12 col-md-12 col-lg-12">
                                 <label class="section-header">Scheme name</label>
                                 <input type="text" name="scheme-name" placeholder="Name">
                                 <label class="section-header">Compain</label>
@@ -95,15 +95,15 @@
                                         <option value="dolor">Dolor</option>
                                     </select>
                                 <label class="section-header">Language</label>
-                                    <select placeholder="Select">
-                                        <option value="en">EN</option>
-                                        <option value="ipsum">GER</option>
-                                        <option value="dolor">FRA</option>
+                                    <select placeholder="select">
+                                        <option class="en-language" value="en">EN</option>
+                                        <option class="ger-language" value="ipsum">GER</option>
+                                        <option class="fra-language" value="dolor">FRA</option>
                                     </select>
                             </form>
                         </div>
                         <div class="row">
-                            <div class="banner-options col-sm-12 col-md-12">
+                            <div class="banner-options col-sm-12 col-md-12 col-lg-12">
                                 <label class="section-header">Weight-height</p>
                                     <select placeholder="select">
                                         <option value="lorem">Lorem</option>
@@ -125,11 +125,11 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="selecting col-sm-12 col-md-12">
+                            <div class="selecting col-sm-12 col-md-12 col-lg-12">
                                 <div class="row">
-                                    <div class="select-banners col-sm-6 col-md-6">
+                                    <div class="select-banners col-sm-6 col-md-6 col-lg-6">
                                         <p class="section header">Select banners</p>
-                                        <input type="checkbox" name="banner-1"><p class="text">Banner main<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
+                                        <input type="checkbox" name="banner-1"><div class="check-icon"></div><p class="text">Banner main<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
                                         <input type="checkbox" name="banner-2"><p class="text">Sign up banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
                                         <input type="checkbox" name="banner-3"><p class="text">Left banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
                                         <input type="checkbox" name="banner-4"><p class="text">Right banner<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
@@ -140,7 +140,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="select-websites col-sm-6 col-md-6">
+                                    <div class="select-websites col-sm-6 col-md-6 col-lg-6">
                                         <p class="section header">Select websites</p>
                                         <input type="checkbox" name="website-1"><p class="text">Landing page money<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
                                         <input type="checkbox" name="website-2"><p class="text">LP your choice<img class="icon-show" alt="icon" src="/images/icons/show.svg"></p></input>
@@ -155,7 +155,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12 col-md-12 banner-end">
+                            <div class="col-sm-12 col-md-12 col-lg-12 banner-end">
                                 <button class="grey-btn"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Copy link</button>
                                 <button class="orange-btn">Save</button>
                             </div>

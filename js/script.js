@@ -3,10 +3,18 @@
 function toggleMenu(visible) {
     document.querySelector('.menu').classList.toggle('show', visible);
 }
+function toogleSidebar(visible) {
+    document.querySelector('.sidebar').classList.toggle('change-height', visible);
+}
+function tooglePaddingForContainer(visible) {
+    document.querySelector('.container-fluid').classList.toogle('change-padding', visible);
+}
 
 document.querySelector('.hamburger').addEventListener('click', function(e) {
     e.preventDefault();
     toggleMenu();
+    toggleSidebar();
+    togglePaddingForContainer();
 });
 
 // QUIT MODAL

@@ -1,9 +1,8 @@
 .sidebar {
-    width: 15%;
     position: fixed;
     background-color: $sidebar-background-color;
-    height: 100%;
     .sidebar-up {
+        @include border(0, 0, 1px, 0);
         .brand {
             @include flex(center, center);
             background-color: $sidebar-background-color;
@@ -24,19 +23,18 @@
             .hamburger {
                 margin: 0 10px;
             }
-        }
-        @include border(0, 0, 1px, 0);
+        }  
     }
-    .sidebar-menu {
-        .menu {
+    .menu {
+        .sidebar-menu {
             .menu-icon {
                 display: flex;
                 color: $paragraph-color;
-                font-size: $paragraph-font-size;
                 font-family: $paragraph-font;
                 text-decoration: none;
                 padding: (40px - $paragraph-font-size) / 2 0;
                 padding-left: $sidebar-padding-left;
+                font-size: $paragraph-font-size;
                 img {
                     @include icon(16px,black);
                     padding-right: 5px;
@@ -49,22 +47,22 @@
                 } 
             }
         }
-    }
-    .sidebar-down {
+        .sidebar-down {
         @include border(1px, 0, 0, 0);
         padding-left: $sidebar-padding-left;
-        .manager {
+            .manager {
             padding-top: 27px;
-        }
-        .wrapper {
-            display: flex;
-            img {
-                border-radius: 50%;
-                @include rectangle(40px, 40px);
-                margin: 15px 0;
             }
-            p {
-                padding: 12px;
+            .wrapper {
+            display: flex;
+                img {
+                    border-radius: 50%;
+                    @include rectangle(40px, 40px);
+                    margin: 15px 0;
+                }
+                p {
+                    padding: 12px;
+                }
             }
         }
     } 
