@@ -35,3 +35,14 @@
         @include icon(20px, black);
     }
 }
+.refresh-btn {
+    @include rectangle(40px, 40px);
+    margin-left: 20px;
+    position: relative;
+    .icon-refresh {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(49deg) brightness(101%) contrast(106%);
+        @include rectangle(16px, 16px);
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+}

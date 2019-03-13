@@ -18,6 +18,10 @@
         padding: 20px;
         @include border (1px, 1px, 1px, 1px);
         width: 80%;
+        img {
+            @include rectangle(60%, 60%);
+            margin-left: 20%;
+        }
         .add-banner-header {
             @include flex(space-between, flex-start);
             width: 100%;

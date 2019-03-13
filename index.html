@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <div class="navigation">
             <div class="wallet">
                 <img alt="icon" class="icon-wallet" src="/images/icons/wallet.svg">
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
     <div class="sidebar change-height">
         <div class="sidebar-up">
             <div class="brand">
@@ -70,11 +70,11 @@
     </div>
     <div class="container-fluid container">
         <div class="row">
-        <div class="main col-sm-12 col-md-12 col-lg-12">
+        <main class="col-md-12 col-lg-12">
             <div class="row">
             <section class="general col-md-12 col-sm-12 col-lg-12">
                 <div class="row">
-                    <div class="page-header general-header col-md-12 col-sm-12 col-lg-12">General statistic</div>
+                    <header class="page-header general-header col-md-12 col-sm-12 col-lg-12">General statistic</header>
                 </div>
                 <div class="row">
                     <div class="date-period col-md-12 col-sm-12 col-lg-12">
@@ -85,12 +85,15 @@
                             <p>16.05.2016</p>
                             <img class="icon-calendar" alt="icon" src="/images/icons/calendar.svg">
                         </div>
+                        <button class="refresh-btn orange-btn">
+                            <img class="icon-refresh" alt="icon" src="/images/icons/refresh.svg">
+                        </button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="table-1 col-md-12 col-sm-12 col-lg-12">
                         <div class="row table-row">
-                            <div class="list-left col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="list-left col-lg-4 col-md-4 col-sm-4">
                                 <div class="list-with-digit">
                                     <p class="section-header">Visit Signups</p>
                                     <p class="text">124</p>
@@ -100,7 +103,7 @@
                                     <p class="text">445</p>
                                 </div>
                             </div>
-                            <div class="list-right col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="list-right col-lg-4 col-md-4 col-sm-4">
                                 <div class="list-with-digit">
                                     <p class="section-header">Net deposit</p>
                                     <p class="text">564</p>
@@ -141,9 +144,83 @@
                 </div>
             </section>
             </div>
-        </div>
+            <div class="row">
+                <section class="links col-md-12 col-sm-12 col-lg-12">
+                    <div class="links-row row">
+                        <header class="page-header col-sm-12 col-md-12 col-lg-12">Links</header>
+                    </div>
+                    <button class="orange-btn addnew-btn">+add new</button>
+                    <div class="table-with-link-row homepage-row">
+                        <p class="section-header">Home page</p>
+                        <a href="#" class="link">www.homepage.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Currently offer</p>
+                        <a href="#" class="link">www.current.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Blurpix</p>
+                        <a href="#" class="link">www.blurpix.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Google</p>
+                        <a href="#" class="link">www.google.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Facebook</p>
+                        <a href="#" class="link">www.facebook.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Blurax</p>
+                        <a href="#" class="link">www.blurax.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Piece of wine</p>
+                        <a href="#" class="link">www.pieceofwine.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Twitter</p>
+                        <a href="#" class="link">www.twitter.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <button class="orange-btn addnew-btn">+add new</button>
+                </section>
+            </div>
+        </main>
         </div>
     </div>
     <script type="text/javascript" src='js/script.js'></script>
+    <script type="text/javascript" src='js/canvas.js'></script>
 </body>
 </html>

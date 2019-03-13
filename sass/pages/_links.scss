@@ -1,9 +1,9 @@
-.main {
+main {
     .links {
-    margin: 10px 0;
-    background-color: $page-background-color;
-    @include flex(center, center);
-    flex-direction: column;
+        margin: 10px 0;
+        background-color: $page-background-color;
+        @include flex(center, center);
+        flex-direction: column;
         .links-row {
             width: 100%;
         }

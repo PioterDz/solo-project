@@ -36,15 +36,19 @@
                 padding-left: $sidebar-padding-left;
                 font-size: $paragraph-font-size;
                 img {
-                    @include icon(16px,black);
+                    @include icon(20px,white);
                     padding-right: 5px;
+                    filter: invert(49%) sepia(3%) saturate(12%) hue-rotate(27deg) brightness(96%) contrast(92%);
                 }
                 &:hover {
                 color: $text-color-hover;
-                background-color: $hover-background-color;
+                background-color: $sidebar-hover-background-color;
                 @include border(0, 0, 0, 10px);
                 border-color: $action-button-color-hover;
-                } 
+                }
+                &:hover img {
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(49deg) brightness(101%) contrast(106%);
+                }
             }
         }
         .sidebar-down {
