@@ -1,3 +1,6 @@
+.banners-row {
+    width: 100%;
+}
 .banner-modal {
     display: none;
     position: fixed;
@@ -15,6 +18,10 @@
         padding: 20px;
         @include border (1px, 1px, 1px, 1px);
         width: 80%;
+        img {
+            @include rectangle(60%, 60%);
+            margin-left: 20%;
+        }
         .add-banner-header {
             @include flex(space-between, flex-start);
             width: 100%;
@@ -31,11 +38,22 @@
             width: 100%;
             .select-banners {
                 @include border(1px, 1px, 1px, 0);
-                width: 50%;
+                width: 50%;                
+                img {
+                    @include icon(18px,black);
+                }
             }
             .select-websites {
                 @include border(1px, 0, 1px, 0);
                 width: 50%;
+                img {
+                    @include icon(18px,black);
+                }
+            }
+        }
+        .banner-end {
+            img {
+                @include icon(18px,black);
             }
         }
     }

@@ -1,11 +1,17 @@
-.main {
+main {
     .links {
-    margin: 20px;
-    background-color: $page-background-color;
-    @include flex(center, center);
-    flex-direction: column;
+        margin: 10px 0;
+        background-color: $page-background-color;
+        @include flex(center, center);
+        flex-direction: column;
+        .links-row {
+            width: 100%;
+        }
         .addnew-btn {
             margin: 20px;
+        }
+        .homepage-row {
+            @include border (1px, 0, 1px, 0);
         }
     }
 }

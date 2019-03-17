@@ -9,13 +9,14 @@
     font-family: $paragraph-font;
     text-transform: uppercase;
     @include border(0, 0, 1px, 0);
-    padding: 16px 0;
+    padding: 16px 0 16px 10px;
 }
 .section-header {
     color: $paragraph-color;
     font-size: $paragraph-font-size;
     font-weight: 600;
     font-family: $paragraph-font;
+    padding-left: 10px;
 }
 .text {
     font-family: $paragraph-font;

@@ -11,3 +11,19 @@ input[type="password"]{
         border-color: $input-borderbox-warn;
     }
 }
+input[type="checkbox"] {
+    position: absolute;
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    opacity: 0;
+    .check-icon {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 1px solid $input-borderbox;
+    }
+    &:checked .check-icon {
+        background-color: $checked-color;
+      }
+}

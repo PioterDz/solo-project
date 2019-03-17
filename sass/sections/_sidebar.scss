@@ -1,8 +1,8 @@
 .sidebar {
     position: fixed;
-    height: 100%;
     background-color: $sidebar-background-color;
     .sidebar-up {
+        @include border(0, 0, 1px, 0);
         .brand {
             @include flex(center, center);
             background-color: $sidebar-background-color;
@@ -12,7 +12,7 @@
                 color: white;
                 font-size: 24px;
                 padding: 0;
-                margin: 0 20px 0 0;
+                margin: 0 10px 0 20px;
                 text-decoration: none;
                 opacity: 0.8;
                 &:hover {
@@ -20,44 +20,53 @@
                     opacity: 1;
                 }
             }
-        }
-        @include border(0, 0, 1px, 0);
-        .menu {
+            .hamburger {
+                margin: 0 10px;
+            }
+        }  
+    }
+    .menu {
+        .sidebar-menu {
             .menu-icon {
                 display: flex;
                 color: $paragraph-color;
-                font-size: $paragraph-font-size;
                 font-family: $paragraph-font;
                 text-decoration: none;
                 padding: (40px - $paragraph-font-size) / 2 0;
                 padding-left: $sidebar-padding-left;
+                font-size: $paragraph-font-size;
                 img {
-                    @include icon(16px,black);
+                    @include icon(20px,white);
                     padding-right: 5px;
+                    filter: invert(49%) sepia(3%) saturate(12%) hue-rotate(27deg) brightness(96%) contrast(92%);
                 }
                 &:hover {
                 color: $text-color-hover;
-                background-color: $hover-background-color;
+                background-color: $sidebar-hover-background-color;
                 @include border(0, 0, 0, 10px);
                 border-color: $action-button-color-hover;
-                } 
+                }
+                &:hover img {
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(49deg) brightness(101%) contrast(106%);
+                }
             }
         }
-    }
-    .sidebar-down {
+        .sidebar-down {
+        @include border(1px, 0, 0, 0);
         padding-left: $sidebar-padding-left;
-        .manager {
+            .manager {
             padding-top: 27px;
-        }
-        .wrapper {
-            display: flex;
-            img {
-                border-radius: 50%;
-                @include rectangle(40px, 40px);
-                margin: 15px 0;
             }
-            p {
-                padding: 12px;
+            .wrapper {
+            display: flex;
+                img {
+                    border-radius: 50%;
+                    @include rectangle(40px, 40px);
+                    margin: 15px 0;
+                }
+                p {
+                    padding: 12px;
+                }
             }
         }
     } 

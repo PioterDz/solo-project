@@ -7,61 +7,57 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="description" content="Project">
     <meta name="author" content="Piotr Dz.">
-    <link src="./images/icons/fonts/Glyphter.svg" rel="stylesheet">
+    <link href="./images/icons/fonts/Glyphter.svg" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid container">
-    <div class="row">
-        <div class="navbar col-offset-xl-2">
-            <div class="row">
-                <div class="navigation">
-                    <div class="wallet">
-                        <img alt="icon" class="icon-wallet" src="/images/icons/wallet.svg">
-                        <p class="paragraph">$1,500.00</p>
-                        <img alt="icon" class="icon-arrow-down" src="/images/icons/arrow-down.svg">
-                    </div>
-                    <div class="notification top-menu-button">
-                        <img alt="icon" class="icon-notification" src="/images/icons/notification.svg">
-                    </div>
-                    <div class="profile">
-                        <img alt="icon" class="icon-profile" src="/images/icons/profile.svg">
-                        <p class="small-link">Leonardo Dicaprio</p>
-                    </div>
-                    <div class="quit top-menu-button" id="quitBtn">
-                        <img alt="icon" class="icon-quit" src="/images/icons/quit.svg">
-                    </div>
-                    <div id="quitModal" class="quit-modal">
-                        <div class="quit-modal-content">
-                            <p class="paragraph quit-modal-p">Do you really want to quit?</p>
-                            <button class="grey-btn quit-modal-btn" id="quitModalBtn">Cancel</button>
-                            <button class="orange-btn quit-modal-btn">Quit</button>
-                        </div>
-                    </div>
+    <nav class="navbar">
+        <div class="navigation">
+            <div class="wallet">
+                <img alt="icon" class="icon-wallet" src="/images/icons/wallet.svg">
+                <p class="paragraph">$1,500.00</p>
+                <img alt="icon" class="icon-arrow-down" src="/images/icons/arrow-down.svg">
+            </div>
+            <div class="notification top-menu-button">
+                <img alt="icon" class="icon-notification" src="/images/icons/notification.svg">
+            </div>
+            <div class="profile">
+                <img alt="icon" class="icon-profile" src="/images/icons/profile.svg">
+                <p class="small-link">Leonardo Dicaprio</p>
+            </div>
+            <div class="quit top-menu-button" id="quitBtn">
+                <img alt="icon" class="icon-quit" src="/images/icons/quit.svg">
+            </div>
+            <div id="quitModal" class="quit-modal">
+                <div class="quit-modal-content">
+                    <p class="paragraph quit-modal-p">Do you really want to quit?</p>
+                    <button class="grey-btn quit-modal-btn" id="quitModalBtn">Cancel</button>
+                    <button class="orange-btn quit-modal-btn"><a href="https://kodilla.com">Quit</a></button>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="sidebar col-xl-2">
-            <div class="sidebar-up">
-                <div class="brand">
-                    <a class="brand-name" href="#">Just do it</a>
-                    <div class="hamburger">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
+    </nav>
+    <div class="sidebar change-height">
+        <div class="sidebar-up">
+            <div class="brand">
+                <a class="brand-name" href="#">Just do it</a>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-                <div class="menu">
-                    <a class="menu-icon" href="/index.html"><img class="icon-general" alt="icon" src="/images/icons/general.svg">General</a>
-                    <a class="menu-icon" href="#"><img class="icon-details" alt="icon" src="/images/icons/details.svg">Details</a> 
-                    <a class="menu-icon" href="/templates/links.html"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Links</a>
-                    <a class="menu-icon" href="/templates/banners.html"><img class="icon-banners" alt="icon" src="/images/icons/banners.svg">Banners</a>
-                    <a class="menu-icon" href="/templates/personal-data.html"><img class="icon-personaldata" alt="icon" src="/images/icons/personaldata.svg">Personal data</a>
-                    <a class="menu-icon" href="#"><img class="icon-payout" alt="icon" src="/images/icons/payout.svg">Payout</a>
-                    <a class="menu-icon" href="#"><img class="icon-postback" alt="icon" src="/images/icons/postback.svg">Postback</a>
-                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="sidebar-menu">
+                <a class="menu-icon" href="/index.html"><img class="icon-general" alt="icon" src="/images/icons/general.svg">General</a>
+                <a class="menu-icon" href="#"><img class="icon-details" alt="icon" src="/images/icons/details.svg">Details</a> 
+                <a class="menu-icon" href="/templates/links.html"><img class="icon-links" alt="icon" src="/images/icons/links.svg">Links</a>
+                <a class="menu-icon" href="/templates/banners.html"><img class="icon-banners" alt="icon" src="/images/icons/banners.svg">Banners</a>
+                <a class="menu-icon" href="/templates/personal-data.html"><img class="icon-personaldata" alt="icon" src="/images/icons/personaldata.svg">Personal data</a>
+                <a class="menu-icon" href="#"><img class="icon-payout" alt="icon" src="/images/icons/payout.svg">Payout</a>
+                <a class="menu-icon" href="#"><img class="icon-postback" alt="icon" src="/images/icons/postback.svg">Postback</a>
             </div>
             <div class="sidebar-down">
                 <header class="section-header manager">Your manager</header>
@@ -72,59 +68,58 @@
             </div>
         </div>
     </div>
-    <div class="main">
+    <div class="container-fluid container">
         <div class="row">
-        <section class="general col-offset-xl-2">
+        <main class="col-md-12 col-lg-12">
             <div class="row">
-                <div class="page-header general-header col-12">General statistic</div>
-            </div>
-            <div class="row">
-                <div class="date-period col-xl-12">
-                    <div class="first-date">
-                        <p>16.05.2016</p>
-                    </div>
-                    <div class="second-date">
-                        <p>16.05.2016</p>
-                        <img class="icon-calendar" alt="icon" src="/images/icons/calendar.svg">
+            <section class="general col-md-12 col-sm-12 col-lg-12">
+                <div class="row">
+                    <header class="page-header general-header col-md-12 col-sm-12 col-lg-12">General statistic</header>
+                </div>
+                <div class="row">
+                    <div class="date-period col-md-12 col-sm-12 col-lg-12">
+                        <div class="first-date">
+                            <p>16.05.2016</p>
+                        </div>
+                        <div class="second-date">
+                            <p>16.05.2016</p>
+                            <img class="icon-calendar" alt="icon" src="/images/icons/calendar.svg">
+                        </div>
+                        <button class="refresh-btn orange-btn">
+                            <img class="icon-refresh" alt="icon" src="/images/icons/refresh.svg">
+                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="table-1 col-xl-12">
-                    <div class="row">
-                        <div class="col-offset-xl-3"></div>
-                        <div class="list-left col-xl-3">
-                            <div class="list-with-digit">
-                                <p class="section-header">Visit Signups</p>
-                                <p class="text">124</p>
+                <div class="row">
+                    <div class="table-1 col-md-12 col-sm-12 col-lg-12">
+                        <div class="row table-row">
+                            <div class="list-left col-lg-4 col-md-4 col-sm-4">
+                                <div class="list-with-digit">
+                                    <p class="section-header">Visit Signups</p>
+                                    <p class="text">124</p>
+                                </div>
+                                <div class="list-with-digit">
+                                    <p class="section-header">FTD</p>
+                                    <p class="text">445</p>
+                                </div>
                             </div>
-                            <div class="list-with-digit">
-                                <p class="section-header">FTD</p>
-                                <p class="text">445</p>
-                            </div>
-                        </div>
-                        <div class="list-right col-xl-3">
-                            <div class="list-with-digit">
-                                <p class="section-header">Net deposit</p>
-                                <p class="text">564</p>
-                            </div>
-                            <div class="list-with-digit">
-                                <p class="section-header">Turn over</p>
-                                <p class="text">432</p>
+                            <div class="list-right col-lg-4 col-md-4 col-sm-4">
+                                <div class="list-with-digit">
+                                    <p class="section-header">Net deposit</p>
+                                    <p class="text">564</p>
+                                </div>
+                                <div class="list-with-digit">
+                                    <p class="section-header">Turn over</p>
+                                    <p class="text">432</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3"></div>
-                <div class="graph-btn col-xl-6">
+                <div class="row earnings-text">
                     <div class="section-header">Earnings chart</div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3"></div>
-                <div class="col-xl-8">
+                <div class="row clr-tabs">
                     <div class="color-tab">
                         <div class="tab-circle circle-blue"></div>
                         <p class="paragraph">Signups</p> 
@@ -138,17 +133,94 @@
                         <p class="paragraph">Earned</p> 
                     </div>
                 </div>
+                <div class="row">
+                    <div class="graph col-md-8 col-sm-10 col-lg-8">
+                        <div class="scroll-wrapper">
+                            <table>
+                                <canvas id="myChart"></canvas>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
             </div>
             <div class="row">
-                <div class="col-xl-2"></div>
-                <div class="graph col-xl-8">
-                    <img alt=graph src="images/wykres.png">
-                </div>
+                <section class="links col-md-12 col-sm-12 col-lg-12">
+                    <div class="links-row row">
+                        <header class="page-header col-sm-12 col-md-12 col-lg-12">Links</header>
+                    </div>
+                    <button class="orange-btn addnew-btn">+add new</button>
+                    <div class="table-with-link-row homepage-row">
+                        <p class="section-header">Home page</p>
+                        <a href="#" class="link">www.homepage.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Currently offer</p>
+                        <a href="#" class="link">www.current.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Blurpix</p>
+                        <a href="#" class="link">www.blurpix.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Google</p>
+                        <a href="#" class="link">www.google.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Facebook</p>
+                        <a href="#" class="link">www.facebook.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Blurax</p>
+                        <a href="#" class="link">www.blurax.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Piece of wine</p>
+                        <a href="#" class="link">www.pieceofwine.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <div class="table-with-link-row">
+                        <p class="section-header">Twitter</p>
+                        <a href="#" class="link">www.twitter.com</a>
+                        <div class="two-icons">
+                            <img class="icon-links" alt="icon" src="/images/icons/links.svg">
+                            <img class="icon-trash" alt="icon" src="/images/icons/trash.svg">
+                        </div>
+                    </div>
+                    <button class="orange-btn addnew-btn">+add new</button>
+                </section>
             </div>
-        </section>
+        </main>
         </div>
     </div>
-    </div>
     <script type="text/javascript" src='js/script.js'></script>
+    <script type="text/javascript" src='js/canvas.js'></script>
 </body>
 </html>

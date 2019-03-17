@@ -1,50 +1,43 @@
 // MENU SHOW
 
-function toggleMenu(visible) {
-    document.querySelector('.menu').classList.toggle('show', visible);
+function toggleMenu() {
+    document.querySelector('.menu').classList.toggle('show');
+}
+function toggleSidebar() {
+    document.querySelector('.sidebar').classList.toggle('change-height');
+}
+function toggleMarginTopForMain() {
+    document.querySelector('main').classList.toggle('change-top-margin');
+}
+function togglePaddingLeftForContainer() {
+    document.querySelector('.container-fluid').classList.toggle('change-left-padding');
 }
 
 document.querySelector('.hamburger').addEventListener('click', function(e) {
     e.preventDefault();
     toggleMenu();
+    toggleSidebar();
+    togglePaddingLeftForContainer();
+    toggleMarginTopForMain();
 });
 
 // QUIT MODAL
 
-var quitModal = document.getElementById('quitModal');
-var quitBtn = document.getElementById('quitBtn');
-var quitModalBtn = document.getElementById('quitModalBtn');
+var quitPageModal = document.getElementById('quitModal');
+var openQuitPageModalButton = document.getElementById('quitBtn');
+var escapeQuitPageModalButton = document.getElementById('quitModalBtn');
 
-quitBtn.onclick = function () {
-    quitModal.style.display = "block";
-}
+openQuitPageModalButton.addEventListener('click', function () {
+    quitPageModal.style.display = "block";
+});
 
-quitModalBtn.onclick = function () {
-    quitModal.style.display = "none";
-}
+escapeQuitPageModalButton.addEventListener('click', function () {
+    quitPageModal.style.display = "none";
+});
 
-window.onclick = function(event) {
-    if (event.target == quitModal) {
-        quitModal.style.display = "none";
+document.body.addEventListener('click', function(event) {
+    if (event.target == quitPageModal) {
+        quitPageModal.style.display = "none";
     }
-}
+});
 
-// BANNERS MODAL 
-
-var bannerModal = document.getElementById('bannerModal');
-var bannerBtn = document.getElementById('banner-modal-btn');
-var close = document.getElementsByClassName('close')[0];
-
-bannerBtn.onclick = function () {
-    bannerModal.style.display = "block";
-}
-
-close.onclick = function () {
-    bannerModal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == bannerModal) {
-        bannerModal.style.display = "none";
-    }
-}
