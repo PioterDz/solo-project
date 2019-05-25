@@ -41,6 +41,7 @@
         }
         .sidebar-menu {
             background-color: $sidebar-background-color;
+            padding-left: 0;
             .menu-icon {
                 font-size: $paragraph-font-size;
             }
@@ -81,10 +82,18 @@
                 font-size: 20px;
             }
         }
+        .sidebar-down {
+            .manager {
+                padding-left: 0;
+            }
+        }
     }
     .personal-data-container {
         .section-header {
             font-size:11px;
         }
+    }
+    .table-with-link-row {
+        @include flex(space-between, center);
     }
 }

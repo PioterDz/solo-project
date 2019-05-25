@@ -14,13 +14,15 @@
         margin: 200px auto;
         padding: 20px;
         @include border (1px, 1px, 1px, 1px);
-        width: 30%;
+        width: 60%;
     }
     .quit-modal-p {
         margin: 0 0 35px 0;
+        text-align: center;
     }
-    .quit-modal-btn { 
-        margin-left: 35px;
+    .quit-modal-btns {
+        @include flex(space-around, center);
+        flex-direction: row;
     }
 }
 

@@ -29,6 +29,9 @@
             img {
                 @include icon(18px,black);
             }
+            .small-link {
+                background: none;
+            }
         }
         .quit {
             cursor: pointer;

@@ -27,13 +27,13 @@
     }
     .menu {
         .sidebar-menu {
+            padding-left: 20%;
             .menu-icon {
                 display: flex;
                 color: $paragraph-color;
                 font-family: $paragraph-font;
                 text-decoration: none;
                 padding: (40px - $paragraph-font-size) / 2 0;
-                padding-left: $sidebar-padding-left;
                 font-size: $paragraph-font-size;
                 img {
                     @include icon(20px,white);
@@ -53,7 +53,9 @@
         }
         .sidebar-down {
         @include border(1px, 0, 0, 0);
-        padding-left: $sidebar-padding-left;
+        @include flex(center, center);
+        flex-direction: column;
+        width: 100%;
             .manager {
             padding-top: 27px;
             }
@@ -66,6 +68,7 @@
                 }
                 p {
                     padding: 12px;
+                    background: none;
                 }
             }
         }
