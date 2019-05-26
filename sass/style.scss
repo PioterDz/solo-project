@@ -3,7 +3,7 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-@import "mediaqueries";
+
 
 
 /* components */
@@ -25,3 +25,5 @@
 @import "pages/links";
 @import "pages/personal-data";
 @import "pages/banners";
+
+@import "mediaqueries";

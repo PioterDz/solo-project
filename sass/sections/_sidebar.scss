@@ -1,6 +1,7 @@
 .sidebar {
     position: fixed;
     background-color: $sidebar-background-color;
+    z-index: 1;
     .sidebar-up {
         @include border(0, 0, 1px, 0);
         .brand {

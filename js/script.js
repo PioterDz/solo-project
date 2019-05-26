@@ -12,6 +12,12 @@ function toggleMarginTopForMain() {
 function togglePaddingLeftForContainer() {
     document.querySelector('.container-fluid').classList.toggle('change-left-padding');
 }
+function changeHamburger() {
+    document.querySelector('.brand').classList.toggle('change-brand');
+}
+function changeLogoDisplay() {
+    document.querySelector('.brand-name').classList.toggle('brand-name-display');
+}
 
 document.querySelector('.hamburger').addEventListener('click', function(e) {
     e.preventDefault();
@@ -19,6 +25,8 @@ document.querySelector('.hamburger').addEventListener('click', function(e) {
     toggleSidebar();
     togglePaddingLeftForContainer();
     toggleMarginTopForMain();
+    changeHamburger();
+    changeLogoDisplay();
 });
 
 // QUIT MODAL
