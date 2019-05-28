@@ -754,26 +754,31 @@ input[type="checkbox"] {
     padding-left: 20%; }
     .sidebar .menu .sidebar-menu .menu-icon {
       display: flex;
+      align-items: center;
       color: #797979;
       font-family: Glyphter, Helvetica, Arial;
       text-decoration: none;
-      padding: 13px 0;
-      font-size: 14px; }
+      margin: 13px 0;
+      font-size: 14px;
+      height: 25px; }
+      .sidebar .menu .sidebar-menu .menu-icon .orange-square {
+        width: 10px;
+        height: 25px;
+        background-color: #333333; }
       .sidebar .menu .sidebar-menu .menu-icon img {
         width: 20px;
         height: 20px;
         color: white;
         padding-right: 5px;
+        margin-left: 5px;
         filter: invert(49%) sepia(3%) saturate(12%) hue-rotate(27deg) brightness(96%) contrast(92%); }
       .sidebar .menu .sidebar-menu .menu-icon:hover {
         color: white;
-        background-color: #979797;
-        border-style: solid;
-        border-width: 0 0 0 10px;
-        border-color: #e3e3e3;
-        border-color: #ffa220; }
+        background-color: #979797; }
       .sidebar .menu .sidebar-menu .menu-icon:hover img {
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(49deg) brightness(101%) contrast(106%); }
+      .sidebar .menu .sidebar-menu .menu-icon:hover .orange-square {
+        background-color: #f58220; }
   .sidebar .menu .sidebar-down {
     border-style: solid;
     border-width: 1px 0 0 0;

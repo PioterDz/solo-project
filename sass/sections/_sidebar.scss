@@ -31,24 +31,32 @@
             padding-left: 20%;
             .menu-icon {
                 display: flex;
+                align-items: center;
                 color: $paragraph-color;
                 font-family: $paragraph-font;
                 text-decoration: none;
-                padding: (40px - $paragraph-font-size) / 2 0;
+                margin: (40px - $paragraph-font-size) / 2 0;
                 font-size: $paragraph-font-size;
+                height: 25px;
+                .orange-square {
+                    @include rectangle(10px, 25px);
+                    background-color: $sidebar-background-color;
+                }
                 img {
                     @include icon(20px,white);
                     padding-right: 5px;
+                    margin-left: 5px;
                     filter: invert(49%) sepia(3%) saturate(12%) hue-rotate(27deg) brightness(96%) contrast(92%);
                 }
                 &:hover {
-                color: $text-color-hover;
-                background-color: $sidebar-hover-background-color;
-                @include border(0, 0, 0, 10px);
-                border-color: $action-button-color-hover;
+                    color: $text-color-hover;
+                    background-color: $sidebar-hover-background-color;
                 }
                 &:hover img {
                     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(49deg) brightness(101%) contrast(106%);
+                }
+                &:hover .orange-square {
+                    background-color: $action-button-color;
                 }
             }
         }
